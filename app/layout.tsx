@@ -4,15 +4,14 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { siteIdentity } from "@/content/site";
 import "./globals.css";
 
-const metadataBase = process.env.NEXT_PUBLIC_SITE_URL
-  ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
-  : undefined;
-const ogImage = metadataBase
-  ? new URL("/og.png", metadataBase).toString()
-  : "/og.png";
+const metadataBase = new URL(
+  process.env.NEXT_PUBLIC_SITE_URL ??
+    "https://aleksandar-tomovski.alek-tomos.chatgpt.site",
+);
+const ogImage = new URL("/og.png", metadataBase).toString();
 
 export const metadata: Metadata = {
-  ...(metadataBase ? { metadataBase } : {}),
+  metadataBase,
   title: {
     default: `${siteIdentity.name} | ${siteIdentity.roleLine}`,
     template: `%s | ${siteIdentity.name}`,
