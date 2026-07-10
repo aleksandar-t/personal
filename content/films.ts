@@ -12,11 +12,32 @@ export const primaryFilm: FilmProject = {
     width: 1600,
     height: 900,
   },
-  videoPlaceholder:
-    "Video embed placeholder. Replace this area with the final hosted film, trailer, or private screener embed.",
+  links: [
+    {
+      label: "Watch on YouTube",
+      href: "https://www.youtube.com/watch?v=_2E8QuuNgIE",
+      note: "The Paradox | One Minute Short Film",
+    },
+    {
+      label: "IMDb",
+      href: "https://www.imdb.com/title/tt14683450/?ref_=fn_i_35",
+      note: "IMDb title page",
+    },
+    {
+      label: "More video projects",
+      href: "https://www.youtube.com/@aleksandartomovski7829",
+      note: "Aleksandar Tomovski on YouTube",
+    },
+  ],
+  video: {
+    title: "The Paradox | One Minute Short Film",
+    watchUrl: "https://www.youtube.com/watch?v=_2E8QuuNgIE",
+    embedUrl: "https://www.youtube-nocookie.com/embed/_2E8QuuNgIE",
+  },
   synopsis: [
-    "A ballerina performs as the Black Swan in an empty theatre.",
-    "The film does not reduce that absence to loneliness or spectacle. It asks what kind of relationship exists between the artist, the act, the observer, and the absence of observation.",
+    "A ballerina performs as the Black Swan in an empty theatre, her breath and movement held inside the quiet of an absent audience.",
+    "The film connects a present-day stage reality, artists performing and rehearsing in empty theatres, with the older philosophical problem of existence without observation.",
+    "It does not reduce that absence to loneliness or spectacle. It asks what kind of relationship exists between the artist, the act, the observer, and the absence of observation.",
   ],
   directorNote: [
     "The Paradox is not only asking whether art exists without an audience.",
@@ -24,7 +45,7 @@ export const primaryFilm: FilmProject = {
   ],
   credits: [
     { role: "Director", name: "Aleksandar Tomovski" },
-    { role: "Performer", name: "To be added", placeholder: true },
+    { role: "Performer", name: "Marija Kichevska" },
     { role: "Cinematography", name: "To be added", placeholder: true },
     { role: "Music / Sound", name: "To be added", placeholder: true },
     { role: "Additional credits", name: "To be added", placeholder: true },
@@ -49,11 +70,23 @@ export const primaryFilm: FilmProject = {
       height: 950,
     },
   ],
+  review: {
+    reviewer: "Sayantan Mukherjee",
+    rating: "8/10",
+    source: "The Paradox: A Review",
+    pullQuote:
+      "sharp, simple and direct",
+    summary: [
+      "The review frames The Paradox through the familiar question of whether a falling tree makes a sound when no one is there to hear it, then connects that thought experiment to observation, perception, and quantum behavior.",
+      "It notes the monochrome palette, the empty theatre, the Black Swan performance, and the way the film turns a recording device into an insufficient substitute for a true observer.",
+      "The review also reads the film through the Covid-era reality of stage artists rehearsing and performing without live audiences.",
+    ],
+  },
   festivalStatus:
-    "Festival selections, screenings, reviews, and awards will be added here when they are public.",
+    "Festival selections, screenings, and additional public reviews will be added here when they are public.",
 };
 
 export const futureFilms = [
-  "A quiet placeholder for future short films.",
-  "A place for experiments, studies, and cinematic notes that grow out of photography and writing.",
+  "More video projects are collected on Aleksandar Tomovski's YouTube channel.",
+  "Future short films, experiments, studies, and cinematic notes can grow from the same place as photography and writing.",
 ];

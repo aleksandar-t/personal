@@ -57,6 +57,10 @@ test("keeps content editable and starter-only pieces removed", async () => {
   assert.match(site, /One way of seeing/);
   assert.match(photography, /Behind the Curtains/);
   assert.match(films, /The Paradox/);
+  assert.match(films, /https:\/\/www\.youtube\.com\/watch\?v=_2E8QuuNgIE/);
+  assert.match(films, /https:\/\/www\.imdb\.com\/title\/tt14683450/);
+  assert.match(films, /Sayantan Mukherjee/);
+  assert.match(films, /Marija Kichevska/);
   assert.match(writing, /One Honest Conversation/);
   assert.match(engineering, /Tomovium API Core/);
   assert.match(packageJson, /"framer-motion"/);

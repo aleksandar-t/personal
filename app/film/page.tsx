@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { EditorialQuote } from "@/components/EditorialQuote";
 import { FilmStills } from "@/components/FilmStills";
 import { FullBleedImage } from "@/components/FullBleedImage";
@@ -25,9 +26,14 @@ export default function FilmPage() {
       </section>
 
       <section className="content-band film-layout">
-        <MotionReveal className="video-placeholder">
-          <span>Video embed</span>
-          <p>{primaryFilm.videoPlaceholder}</p>
+        <MotionReveal className="video-embed">
+          <iframe
+            src={primaryFilm.video.embedUrl}
+            title={primaryFilm.video.title}
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
         </MotionReveal>
 
         <MotionReveal className="film-copy">
@@ -35,6 +41,14 @@ export default function FilmPage() {
           {primaryFilm.synopsis.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
+          <div className="film-links" aria-label="Film links">
+            {primaryFilm.links.map((link) => (
+              <Link key={link.href} href={link.href}>
+                <span>{link.label}</span>
+                <small>{link.note}</small>
+              </Link>
+            ))}
+          </div>
         </MotionReveal>
       </section>
 
@@ -45,7 +59,7 @@ export default function FilmPage() {
       <section className="content-band credits-section">
         <SectionHeading
           eyebrow="Credits"
-          title="Built to accept real credits when the film package is final."
+          title="Known public credits and placeholders for the final package."
         />
         <dl className="credits-list">
           {primaryFilm.credits.map((credit) => (
@@ -55,6 +69,26 @@ export default function FilmPage() {
             </div>
           ))}
         </dl>
+      </section>
+
+      <section className="content-band review-section">
+        <MotionReveal>
+          <p className="eyebrow">Review material</p>
+          <h2>{primaryFilm.review.source}</h2>
+          <p className="review-meta">
+            {primaryFilm.review.reviewer} <span aria-hidden="true">/</span>{" "}
+            {primaryFilm.review.rating}
+          </p>
+        </MotionReveal>
+        <MotionReveal className="review-copy">
+          <EditorialQuote
+            lines={[primaryFilm.review.pullQuote]}
+            attribution="Review excerpt"
+          />
+          {primaryFilm.review.summary.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </MotionReveal>
       </section>
 
       <section className="content-band">

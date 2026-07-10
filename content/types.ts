@@ -57,15 +57,31 @@ export type FilmProject = {
   slug: string;
   logline: string;
   hero: VisualAsset;
+  links: Array<{
+    label: string;
+    href: string;
+    note: string;
+  }>;
   synopsis: string[];
   directorNote: string[];
-  videoPlaceholder: string;
+  video: {
+    title: string;
+    watchUrl: string;
+    embedUrl: string;
+  };
   credits: Array<{
     role: string;
     name: string;
     placeholder?: boolean;
   }>;
   stills: VisualAsset[];
+  review: {
+    reviewer: string;
+    rating: string;
+    source: string;
+    summary: string[];
+    pullQuote: string;
+  };
   festivalStatus: string;
 };
 

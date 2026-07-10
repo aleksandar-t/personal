@@ -696,23 +696,51 @@ p {
   font-size: 1.16rem;
 }
 
-.video-placeholder {
-  display: grid;
-  min-height: 420px;
-  place-items: center;
+.video-embed {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
     linear-gradient(140deg, rgba(196, 135, 82, 0.18), transparent 42%),
     rgba(244, 239, 231, 0.045);
-  padding: 36px;
-  text-align: center;
 }
 
-.video-placeholder span {
-  color: var(--amber);
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.film-links {
+  display: grid;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.film-links a {
+  display: grid;
+  gap: 4px;
+  border-top: 1px solid var(--line);
+  padding: 14px 0;
+}
+
+.film-links span {
+  color: var(--foreground);
   font-family: var(--font-serif-stack);
-  font-size: 2.4rem;
+  font-size: 1.25rem;
+}
+
+.film-links small,
+.review-meta {
+  color: var(--muted);
+}
+
+.film-links a:hover span {
+  color: var(--amber);
 }
 
 .credits-list {
@@ -741,6 +769,31 @@ p {
 .technical-project dd {
   margin: 8px 0 0;
   color: var(--soft);
+}
+
+.review-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: 54px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.review-meta {
+  margin-top: 18px;
+}
+
+.review-copy .editorial-quote {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.review-copy .editorial-quote span {
+  font-size: 2.3rem;
+}
+
+.review-copy p {
+  max-width: 760px;
 }
 
 .still-grid {
@@ -976,6 +1029,7 @@ p {
   .split-feature,
   .contact-grid,
   .film-layout,
+  .review-section,
   .world-feature,
   .world-feature:nth-child(even),
   .technical-project {

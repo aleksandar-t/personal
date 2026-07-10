@@ -39,8 +39,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     label: "Film",
-    href: "#film-links-placeholder",
-    note: "Replace with screening, trailer, or portfolio links.",
-    placeholder: true,
+    href: "https://www.youtube.com/@aleksandartomovski7829",
+    note: "Aleksandar Tomovski video projects on YouTube.",
   },
 ];
