@@ -27,16 +27,21 @@ Build the GitHub Pages static export:
 npm run build:github
 ```
 
-That command writes a static site to `out/`.
+That command writes the static export to `out/`, then copies the GitHub Pages
+ready site into `docs/`.
 
 ## GitHub Pages
 
-This repo includes `.github/workflows/pages.yml`, which builds and publishes the
-static export automatically on every push to `main`.
+This repo is set up for the simple branch-folder GitHub Pages flow.
 
-In GitHub, open **Settings -> Pages** and set **Source** to **GitHub Actions**.
-Do not use **Deploy from a branch -> main / root** for this project, because the
-repo root contains the Next.js source code, not the generated static site.
+In GitHub, open **Settings -> Pages** and set:
+
+- **Source:** Deploy from a branch
+- **Branch:** `main`
+- **Folder:** `/docs`
+
+Do not use **main / root** for this project, because the repo root contains the
+Next.js source code, not the generated static site.
 
 Expected Pages URL:
 
