@@ -6,13 +6,14 @@ export const book = {
   subtitle: "A Journey Through Curiosity, Relationship, and Experience.",
   hero: {
     src: assetPath("/images/book/one-honest-conversation.png"),
-    alt: "Replaceable book cover placeholder for One Honest Conversation.",
+    alt: "Book cover for One Honest Conversation.",
     width: 1400,
     height: 1000,
   } satisfies VisualAsset,
   synopsis: [
-    "One Honest Conversation is an unusual philosophical journey that emerged from a conversation between one biological and one artificial way of thinking.",
-    "It begins with a photon and gradually opens into observation, time, space, gravity, perception, language, consciousness, relationships, experience, meaning, art, artificial intelligence, curiosity, and humility.",
+    "One Honest Conversation begins with a photon and slowly opens into science, consciousness, relationships, art, silence, memory, attention, and the strange beauty of being alive.",
+    "Written as a philosophical dialogue between a human mind and an artificial one, the book follows curiosity as it moves from physics and perception toward meaning, creativity, the self, and the space between observer and subject.",
+    "The published paperback runs 504 pages and is presented publicly as a journey through curiosity, relationship, and experience.",
   ],
   parts: [
     {
@@ -46,19 +47,16 @@ export const book = {
     "The book is not trying to win an argument. It is trying to remain honest inside a question long enough for the question to become more precise.",
   links: [
     {
-      label: "Purchase link placeholder",
-      href: "#purchase-placeholder",
-      placeholder: true,
+      label: "Official book site",
+      href: "https://onehonestconversation.com/",
     },
     {
-      label: "Download / preview placeholder",
-      href: "#preview-placeholder",
-      placeholder: true,
+      label: "Paperback on Amazon",
+      href: "https://www.amazon.com/One-Honest-Conversation-Relationship-Experience/dp/B0H854WQY2/ref=tmm_pap_swatch_0",
     },
     {
-      label: "Release notification placeholder",
-      href: "#release-placeholder",
-      placeholder: true,
+      label: "Amazon editions",
+      href: "https://www.amazon.com/One-Honest-Conversation-Relationship-Experience/dp/B0H854WQY2",
     },
   ],
 };

@@ -3,9 +3,19 @@ import type { PhotoCollection } from "./types";
 
 export const photographyIntro = {
   title: "Photography",
-  subtitle: "A way of removing noise until the relationship appears.",
+  subtitle: "Art for art's sake, with attention before spectacle.",
   description:
-    "Aleksandar Tomovski is a photographer and filmmaker from Skopje, North Macedonia. His photographic work moves between theatre, portraiture, staged absence, and quiet observation.",
+    "Aleksandar Tomovski is a photographer and filmmaker from Skopje, North Macedonia. His public photography profile presents him as an Artist at FIAP, Master at IAAP, Master of Photography at NPUM, and an internationally published, award-winning photographer. The work moves between theatre, portraiture, staged absence, and quiet observation.",
+  links: [
+    {
+      label: "Instagram portfolio",
+      href: "https://www.instagram.com/tomovski.photography/",
+    },
+    {
+      label: "IAAP profile",
+      href: "https://theiaap.com/profile/7373/",
+    },
+  ],
 };
 
 export const photoCollections: PhotoCollection[] = [

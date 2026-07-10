@@ -96,8 +96,8 @@ export const homeWorlds: HomeWorld[] = [
     eyebrow: "Structure and change",
     href: "/engineering",
     description:
-      "Software architecture, product thinking, technical leadership, and systems built to become clearer under pressure.",
-    featured: "Featured foundation: Tomovium API Core",
+      "Software architecture, technical leadership, mentoring, and systems built to become clearer under pressure.",
+    featured: "Public profile: LinkedIn",
     image: {
       src: assetPath("/images/engineering/systems-placeholder.png"),
       alt: "Replaceable engineering visual placeholder for systems architecture.",

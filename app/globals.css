@@ -144,6 +144,7 @@ img {
 .text-link,
 .project-links a,
 .placeholder-links a,
+.resource-links a,
 .contact-links a,
 .site-footer__links a {
   transition:
@@ -307,6 +308,7 @@ h3 {
 
 .hero-actions a,
 .placeholder-links a,
+.resource-links a,
 .project-links a,
 .contact-form button {
   border: 1px solid var(--line-strong);
@@ -323,6 +325,7 @@ h3 {
 
 .hero-actions a:hover,
 .placeholder-links a:hover,
+.resource-links a:hover,
 .project-links a:hover,
 .contact-form button:hover {
   border-color: var(--amber);
@@ -956,6 +959,7 @@ h3 {
 }
 
 .placeholder-links,
+.resource-links,
 .project-links {
   display: flex;
   flex-wrap: wrap;

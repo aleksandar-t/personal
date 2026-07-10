@@ -23,7 +23,16 @@ export default function PhotographyPage() {
           <h1>{photographyIntro.title}</h1>
           <p>{photographyIntro.subtitle}</p>
         </div>
-        <p>{photographyIntro.description}</p>
+        <div>
+          <p>{photographyIntro.description}</p>
+          <div className="resource-links">
+            {photographyIntro.links.map((link) => (
+              <Link key={link.label} href={link.href}>
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="content-band split-feature">

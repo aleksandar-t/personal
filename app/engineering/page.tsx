@@ -1,19 +1,15 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { FullBleedImage } from "@/components/FullBleedImage";
 import { MotionReveal } from "@/components/MotionReveal";
 import { SectionHeading } from "@/components/SectionHeading";
-import { TechnicalProjectSummary } from "@/components/TechnicalProjectSummary";
 import { assetPath } from "@/content/assets";
-import {
-  engineeringPrinciples,
-  engineeringProfile,
-  technicalProjects,
-} from "@/content/engineering";
+import { engineeringPrinciples, engineeringProfile } from "@/content/engineering";
 
 export const metadata: Metadata = {
   title: "Engineering",
   description:
-    "Software engineering, architecture, leadership, and product work by Aleksandar Tomovski.",
+    "Software engineering, architecture, technical leadership, and professional experience by Aleksandar Tomovski.",
 };
 
 const engineeringImage = {
@@ -63,17 +59,22 @@ export default function EngineeringPage() {
         </ul>
       </section>
 
-      <section className="content-band">
-        <SectionHeading
-          eyebrow="Selected products"
-          title="Personal products and foundations"
-          intro="Each project is described by problem, product idea, technical direction, and architectural principle."
-        />
-        <div className="technical-projects">
-          {technicalProjects.map((project) => (
-            <TechnicalProjectSummary key={project.name} project={project} />
-          ))}
-        </div>
+      <section className="content-band two-column-band">
+        <MotionReveal>
+          <p className="eyebrow">Professional profile</p>
+          <h2>Public engineering story first. Personal products later.</h2>
+        </MotionReveal>
+        <MotionReveal className="prose-column">
+          <p>{engineeringProfile.publicNote}</p>
+          <p>
+            For the engineering side, the strongest public signal right now is
+            the professional profile: senior .NET work, architecture, technical
+            leadership, mentoring, delivery, and production ownership.
+          </p>
+          <div className="resource-links">
+            <Link href={engineeringProfile.profileUrl}>View LinkedIn profile</Link>
+          </div>
+        </MotionReveal>
       </section>
     </>
   );

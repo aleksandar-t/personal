@@ -66,7 +66,12 @@ test("keeps content editable and starter-only pieces removed", async () => {
   assert.match(films, /One Thousand and One Stories/);
   assert.match(films, /Malinski Photo Festival/);
   assert.match(writing, /One Honest Conversation/);
-  assert.match(engineering, /Tomovium API Core/);
+  assert.match(writing, /https:\/\/onehonestconversation\.com\//);
+  assert.match(writing, /https:\/\/www\.amazon\.com\/One-Honest-Conversation/);
+  assert.match(photography, /https:\/\/www\.instagram\.com\/tomovski\.photography\//);
+  assert.match(photography, /https:\/\/theiaap\.com\/profile\/7373\//);
+  assert.match(engineering, /https:\/\/www\.linkedin\.com\/in\/aleksandartomovski\//);
+  assert.match(engineering, /export const technicalProjects: TechnicalProject\[\] = \[\];/);
   assert.match(packageJson, /"framer-motion"/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton|drizzle-orm|drizzle-kit/);
   assert.match(readme, /NEXT_PUBLIC_SITE_URL/);

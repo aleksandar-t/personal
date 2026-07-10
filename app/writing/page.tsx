@@ -60,7 +60,7 @@ export default function WritingPage() {
       <section className="content-band two-column-band">
         <MotionReveal>
           <p className="eyebrow">Behind the book</p>
-          <h2>The Third Mind is inside the work, not the public title.</h2>
+          <h2>A philosophical dialogue on consciousness, AI, art, and experience.</h2>
           <p>{book.behindTheBook}</p>
         </MotionReveal>
         <MotionReveal>
@@ -71,7 +71,7 @@ export default function WritingPage() {
 
       <section className="content-band book-links">
         <EditorialQuote lines={["Nothing meaningful can be forced."]} />
-        <div className="placeholder-links">
+        <div className="resource-links">
           {book.links.map((link) => (
             <Link key={link.label} href={link.href}>
               {link.label}

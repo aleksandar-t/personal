@@ -8,7 +8,7 @@ import { socialLinks } from "@/content/social";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact placeholders for Aleksandar Tomovski's engineering, photography, film, and writing work.",
+    "Public links for Aleksandar Tomovski's engineering, photography, film, and writing work.",
 };
 
 export default function ContactPage() {
@@ -29,7 +29,7 @@ export default function ContactPage() {
         <MotionReveal>
           <SectionHeading
             eyebrow="Links"
-            title="Replace these placeholders when the public channels are ready."
+            title="Public doors into the work."
           />
           <ul className="contact-links">
             {socialLinks.map((link) => (
