@@ -1,5 +1,5 @@
 import { assetPath } from "./assets";
-import type { FilmProject } from "./types";
+import type { FilmProject, VideoProject } from "./types";
 
 export const primaryFilm: FilmProject = {
   title: "The Paradox",
@@ -87,6 +87,49 @@ export const primaryFilm: FilmProject = {
 };
 
 export const futureFilms = [
-  "More video projects are collected on Aleksandar Tomovski's YouTube channel.",
+  "These works move between film, documentary observation, dance, theatre, photography, and performance.",
   "Future short films, experiments, studies, and cinematic notes can grow from the same place as photography and writing.",
+];
+
+export const otherVideoProjects: VideoProject[] = [
+  {
+    title: "Photo Presentation | Malinski Photo Festival",
+    slug: "malinski-photo-festival",
+    year: "2023",
+    format: "Photography presentation",
+    role: "Photography / presentation",
+    href: "https://www.youtube.com/watch?v=dF0OhZA8keM",
+    description:
+      "A festival presentation bringing together three solo photography exhibitions: Behind the Curtains, 1001 Story, and Above the Curtains, shown for Malinski Photo Festival in Kumanovo.",
+  },
+  {
+    title: "One Thousand and One Stories",
+    slug: "one-thousand-and-one-stories",
+    year: "2021",
+    format: "Performance rehearsal film",
+    role: "Video by Aleksandar Tomovski",
+    href: "https://www.youtube.com/watch?v=GBiEgVPMW9Q",
+    description:
+      "A rehearsal document around Scheherazade by Nikolai Rimsky-Korsakov, performed by the orchestra of the Macedonian National Opera and Ballet.",
+  },
+  {
+    title: "AURORA — The Making Of Bolero Ballet",
+    slug: "aurora-making-of-bolero-ballet",
+    year: "2020",
+    format: "Documentary / behind the scenes",
+    role: "Video and photographic documentation",
+    href: "https://www.youtube.com/watch?v=Ru6ehcSnBAA",
+    description:
+      "A behind-the-curtains documentary about the making of Bolero by the Macedonian National Opera and Ballet during pandemic restrictions: heat, masks, rehearsal, devotion, and resilience.",
+  },
+  {
+    title: "METANOIA",
+    slug: "metanoia",
+    year: "2020",
+    format: "Dance portrait",
+    role: "Video portrait",
+    href: "https://www.youtube.com/watch?v=s8YKL5Kyj78",
+    description:
+      "A compact performer story about transformation, acceptance, determination, and the emotional force behind a dancer's movement.",
+  },
 ];

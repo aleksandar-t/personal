@@ -85,6 +85,16 @@ export type FilmProject = {
   festivalStatus: string;
 };
 
+export type VideoProject = {
+  title: string;
+  slug: string;
+  year: string;
+  format: string;
+  role: string;
+  href: string;
+  description: string;
+};
+
 export type BookPart = {
   label: string;
   title: string;

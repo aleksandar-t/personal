@@ -55,7 +55,7 @@ Most copy and data lives in:
 
 - `content/site.ts`: identity, homepage worlds, manifesto, navigation
 - `content/photography.ts`: photography collections, gallery items, captions
-- `content/films.ts`: film synopsis, credits, stills, festival placeholder
+- `content/films.ts`: film synopsis, credits, stills, reviews, video projects
 - `content/writing.ts`: book synopsis, parts, selected lines, links
 - `content/engineering.ts`: engineering profile, principles, products
 - `content/awards.ts`: photography recognition

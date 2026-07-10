@@ -5,7 +5,7 @@ import { FilmStills } from "@/components/FilmStills";
 import { FullBleedImage } from "@/components/FullBleedImage";
 import { MotionReveal } from "@/components/MotionReveal";
 import { SectionHeading } from "@/components/SectionHeading";
-import { futureFilms, primaryFilm } from "@/content/films";
+import { futureFilms, otherVideoProjects, primaryFilm } from "@/content/films";
 
 export const metadata: Metadata = {
   title: "Film",
@@ -94,6 +94,34 @@ export default function FilmPage() {
       <section className="content-band">
         <SectionHeading eyebrow="Stills" title="Frames from the film" />
         <FilmStills stills={primaryFilm.stills} />
+      </section>
+
+      <section className="content-band video-projects-section">
+        <SectionHeading
+          eyebrow="Other video projects"
+          title="Dance, theatre, photography, and documentary observation."
+          intro="A wider set of moving-image work connected by the same instinct: to enter the room behind the performance and preserve the atmosphere around the act."
+        />
+        <div className="video-project-grid">
+          {otherVideoProjects.map((project, index) => (
+            <MotionReveal
+              key={project.slug}
+              className="video-project-card"
+              delay={index * 0.04}
+            >
+              <p className="video-project-card__meta">
+                <span>{project.year}</span>
+                <span>{project.format}</span>
+              </p>
+              <h3>{project.title}</h3>
+              <p className="video-project-card__role">{project.role}</p>
+              <p>{project.description}</p>
+              <Link className="text-link" href={project.href}>
+                Watch project
+              </Link>
+            </MotionReveal>
+          ))}
+        </div>
       </section>
 
       <section className="content-band two-column-band">
