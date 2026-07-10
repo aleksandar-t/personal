@@ -1,3 +1,4 @@
+import { assetPath } from "./assets";
 import type { HomeWorld, NavItem, VisualAsset } from "./types";
 
 export const siteIdentity = {
@@ -10,7 +11,7 @@ export const siteIdentity = {
   principle: "Never sacrifice curiosity for cleverness.",
   closing: "Until the next state.",
   heroImage: {
-    src: "/images/profile/aleksandar-hero-placeholder.png",
+    src: assetPath("/images/profile/aleksandar-hero-placeholder.png"),
     alt: "Replaceable hero image placeholder for one of Aleksandar Tomovski's strongest photographs.",
     width: 1800,
     height: 1200,
@@ -53,7 +54,7 @@ export const homeWorlds: HomeWorld[] = [
       "Artistic photography rooted in observation, intimacy, theatre, silence, and the exact moment where distraction falls away.",
     featured: "Featured collection: Behind the Curtains",
     image: {
-      src: "/images/photography/behind-the-curtains/hero.png",
+      src: assetPath("/images/photography/behind-the-curtains/hero.png"),
       alt: "Replaceable placeholder for the Behind the Curtains photography collection.",
       width: 1600,
       height: 1100,
@@ -68,7 +69,7 @@ export const homeWorlds: HomeWorld[] = [
       "Short cinematic work that treats time, performance, and observation as living relationships rather than answers.",
     featured: "Featured film: The Paradox",
     image: {
-      src: "/images/film/the-paradox/hero.png",
+      src: assetPath("/images/film/the-paradox/hero.png"),
       alt: "Replaceable cinematic placeholder for The Paradox.",
       width: 1600,
       height: 900,
@@ -83,7 +84,7 @@ export const homeWorlds: HomeWorld[] = [
       "A philosophical book shaped through curiosity, relationship, experience, and the unusual meeting of human and artificial thought.",
     featured: "Featured book: One Honest Conversation",
     image: {
-      src: "/images/book/one-honest-conversation.png",
+      src: assetPath("/images/book/one-honest-conversation.png"),
       alt: "Replaceable book image placeholder for One Honest Conversation.",
       width: 1400,
       height: 1000,
@@ -98,7 +99,7 @@ export const homeWorlds: HomeWorld[] = [
       "Software architecture, product thinking, technical leadership, and systems built to become clearer under pressure.",
     featured: "Featured foundation: Tomovium API Core",
     image: {
-      src: "/images/engineering/systems-placeholder.png",
+      src: assetPath("/images/engineering/systems-placeholder.png"),
       alt: "Replaceable engineering visual placeholder for systems architecture.",
       width: 1600,
       height: 1000,

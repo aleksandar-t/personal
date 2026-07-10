@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/Footer";
 import { SiteHeader } from "@/components/SiteHeader";
+import { assetPath } from "@/content/assets";
 import { siteIdentity } from "@/content/site";
 import "./globals.css";
 
 const metadataBase = new URL(
-  process.env.NEXT_PUBLIC_SITE_URL ??
-    "https://aleksandar-tomovski.alek-tomos.chatgpt.site",
+  `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://aleksandar-tomovski.alek-tomos.chatgpt.site"}/`,
 );
-const ogImage = new URL("/og.png", metadataBase).toString();
+const ogImage = new URL("og.png", metadataBase).toString();
 
 export const metadata: Metadata = {
   metadataBase,
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     images: [ogImage],
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: assetPath("/favicon.svg"),
+    shortcut: assetPath("/favicon.svg"),
   },
 };
 

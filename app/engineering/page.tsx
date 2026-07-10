@@ -3,6 +3,7 @@ import { FullBleedImage } from "@/components/FullBleedImage";
 import { MotionReveal } from "@/components/MotionReveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TechnicalProjectSummary } from "@/components/TechnicalProjectSummary";
+import { assetPath } from "@/content/assets";
 import {
   engineeringPrinciples,
   engineeringProfile,
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 const engineeringImage = {
-  src: "/images/engineering/systems-placeholder.png",
+  src: assetPath("/images/engineering/systems-placeholder.png"),
   alt: "Replaceable engineering visual placeholder for system structure and product thinking.",
   width: 1600,
   height: 1000,

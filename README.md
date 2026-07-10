@@ -21,6 +21,29 @@ npm run lint
 npm run build
 ```
 
+Build the GitHub Pages static export:
+
+```bash
+npm run build:github
+```
+
+That command writes a static site to `out/`.
+
+## GitHub Pages
+
+This repo includes `.github/workflows/pages.yml`, which builds and publishes the
+static export automatically on every push to `main`.
+
+In GitHub, open **Settings -> Pages** and set **Source** to **GitHub Actions**.
+Do not use **Deploy from a branch -> main / root** for this project, because the
+repo root contains the Next.js source code, not the generated static site.
+
+Expected Pages URL:
+
+```text
+https://aleksandar-t.github.io/personal/
+```
+
 ## Content
 
 Most copy and data lives in:

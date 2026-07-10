@@ -1,10 +1,11 @@
+import { assetPath } from "./assets";
 import type { BookPart, VisualAsset } from "./types";
 
 export const book = {
   title: "One Honest Conversation",
   subtitle: "A Journey Through Curiosity, Relationship, and Experience.",
   hero: {
-    src: "/images/book/one-honest-conversation.png",
+    src: assetPath("/images/book/one-honest-conversation.png"),
     alt: "Replaceable book cover placeholder for One Honest Conversation.",
     width: 1400,
     height: 1000,

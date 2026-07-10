@@ -1,3 +1,4 @@
+import { assetPath } from "./assets";
 import type { FilmProject } from "./types";
 
 export const primaryFilm: FilmProject = {
@@ -6,7 +7,7 @@ export const primaryFilm: FilmProject = {
   logline:
     "A one-minute film exploring observation, performance, existence, and the relationship between an artist and an absent audience.",
   hero: {
-    src: "/images/film/the-paradox/hero.png",
+    src: assetPath("/images/film/the-paradox/hero.png"),
     alt: "Replaceable cinematic hero placeholder for The Paradox.",
     width: 1600,
     height: 900,
@@ -30,19 +31,19 @@ export const primaryFilm: FilmProject = {
   ],
   stills: [
     {
-      src: "/images/film/the-paradox/empty-theatre.png",
+      src: assetPath("/images/film/the-paradox/empty-theatre.png"),
       alt: "Replaceable still placeholder showing an empty theatre.",
       width: 1500,
       height: 900,
     },
     {
-      src: "/images/film/the-paradox/black-swan.png",
+      src: assetPath("/images/film/the-paradox/black-swan.png"),
       alt: "Replaceable still placeholder for the Black Swan performance.",
       width: 1100,
       height: 1400,
     },
     {
-      src: "/images/film/the-paradox/stage-shadow.png",
+      src: assetPath("/images/film/the-paradox/stage-shadow.png"),
       alt: "Replaceable still placeholder for movement and shadow on stage.",
       width: 1400,
       height: 950,

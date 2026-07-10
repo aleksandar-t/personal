@@ -1,3 +1,4 @@
+import { assetPath } from "./assets";
 import type { PhotoCollection } from "./types";
 
 export const photographyIntro = {
@@ -19,7 +20,7 @@ export const photoCollections: PhotoCollection[] = [
       "The work is less interested in spectacle than in the fragile relationship between presence and readiness.",
     ],
     hero: {
-      src: "/images/photography/behind-the-curtains/hero.png",
+      src: assetPath("/images/photography/behind-the-curtains/hero.png"),
       alt: "Replaceable hero placeholder for the Behind the Curtains collection.",
       width: 1600,
       height: 1100,
@@ -27,7 +28,7 @@ export const photoCollections: PhotoCollection[] = [
     artworks: [
       {
         title: "Curtain Edge",
-        src: "/images/photography/behind-the-curtains/curtain-edge.png",
+        src: assetPath("/images/photography/behind-the-curtains/curtain-edge.png"),
         alt: "Replaceable portrait placeholder showing a quiet backstage curtain moment.",
         width: 900,
         height: 1300,
@@ -36,7 +37,7 @@ export const photoCollections: PhotoCollection[] = [
       },
       {
         title: "Powder Before Light",
-        src: "/images/photography/behind-the-curtains/powder-before-light.png",
+        src: assetPath("/images/photography/behind-the-curtains/powder-before-light.png"),
         alt: "Replaceable landscape placeholder for a preparation moment before performance.",
         width: 1400,
         height: 950,
@@ -45,7 +46,7 @@ export const photoCollections: PhotoCollection[] = [
       },
       {
         title: "Rehearsal Shadow",
-        src: "/images/photography/behind-the-curtains/rehearsal-shadow.png",
+        src: assetPath("/images/photography/behind-the-curtains/rehearsal-shadow.png"),
         alt: "Replaceable monochrome placeholder for a rehearsal movement study.",
         width: 1200,
         height: 1200,
@@ -53,7 +54,7 @@ export const photoCollections: PhotoCollection[] = [
       },
       {
         title: "Waiting Room",
-        src: "/images/photography/behind-the-curtains/waiting-room.png",
+        src: assetPath("/images/photography/behind-the-curtains/waiting-room.png"),
         alt: "Replaceable image placeholder for a quiet backstage waiting moment.",
         width: 1300,
         height: 900,
@@ -70,7 +71,7 @@ export const photoCollections: PhotoCollection[] = [
       "The page is ready for final curatorial text, installation views, and selected works.",
     ],
     hero: {
-      src: "/images/photography/naked-you-me/hero.png",
+      src: assetPath("/images/photography/naked-you-me/hero.png"),
       alt: "Replaceable hero placeholder for the Naked. You. Me. exhibition.",
       width: 1500,
       height: 1000,
@@ -78,7 +79,7 @@ export const photoCollections: PhotoCollection[] = [
     artworks: [
       {
         title: "Room Study",
-        src: "/images/photography/naked-you-me/room-study.png",
+        src: assetPath("/images/photography/naked-you-me/room-study.png"),
         alt: "Replaceable gallery placeholder for Naked. You. Me.",
         width: 1400,
         height: 900,
@@ -86,7 +87,7 @@ export const photoCollections: PhotoCollection[] = [
       },
       {
         title: "Distance",
-        src: "/images/photography/naked-you-me/distance.png",
+        src: assetPath("/images/photography/naked-you-me/distance.png"),
         alt: "Replaceable square placeholder for a relational photographic study.",
         width: 1100,
         height: 1100,
@@ -94,7 +95,7 @@ export const photoCollections: PhotoCollection[] = [
       },
       {
         title: "Surface",
-        src: "/images/photography/naked-you-me/surface.png",
+        src: assetPath("/images/photography/naked-you-me/surface.png"),
         alt: "Replaceable vertical placeholder for an intimate photographic work.",
         width: 900,
         height: 1250,
@@ -111,7 +112,7 @@ export const photoCollections: PhotoCollection[] = [
       "It holds the body, the theatre, and the observer in a single unresolved relationship.",
     ],
     hero: {
-      src: "/images/photography/paradox/hero.png",
+      src: assetPath("/images/photography/paradox/hero.png"),
       alt: "Replaceable hero placeholder for the Paradox photographic collection.",
       width: 1600,
       height: 950,
@@ -119,7 +120,7 @@ export const photoCollections: PhotoCollection[] = [
     artworks: [
       {
         title: "Black Swan Study",
-        src: "/images/photography/paradox/black-swan-study.png",
+        src: assetPath("/images/photography/paradox/black-swan-study.png"),
         alt: "Replaceable placeholder for a ballerina study connected to The Paradox.",
         width: 900,
         height: 1300,
@@ -127,7 +128,7 @@ export const photoCollections: PhotoCollection[] = [
       },
       {
         title: "Empty Theatre",
-        src: "/images/photography/paradox/empty-theatre.png",
+        src: assetPath("/images/photography/paradox/empty-theatre.png"),
         alt: "Replaceable placeholder for an empty theatre photograph.",
         width: 1500,
         height: 900,
@@ -135,7 +136,7 @@ export const photoCollections: PhotoCollection[] = [
       },
       {
         title: "After Movement",
-        src: "/images/photography/paradox/after-movement.png",
+        src: assetPath("/images/photography/paradox/after-movement.png"),
         alt: "Replaceable placeholder for motion after a dance performance.",
         width: 1200,
         height: 1100,
@@ -152,7 +153,7 @@ export const photoCollections: PhotoCollection[] = [
       "The structure supports portrait, landscape, square, monochrome, and color images without forcing them into identical boxes.",
     ],
     hero: {
-      src: "/images/photography/selected-works/hero.png",
+      src: assetPath("/images/photography/selected-works/hero.png"),
       alt: "Replaceable hero placeholder for selected photographic works.",
       width: 1550,
       height: 1050,
@@ -160,7 +161,7 @@ export const photoCollections: PhotoCollection[] = [
     artworks: [
       {
         title: "Window",
-        src: "/images/photography/selected-works/window.png",
+        src: assetPath("/images/photography/selected-works/window.png"),
         alt: "Replaceable selected work placeholder with a quiet window motif.",
         width: 1300,
         height: 900,
@@ -168,7 +169,7 @@ export const photoCollections: PhotoCollection[] = [
       },
       {
         title: "Figure",
-        src: "/images/photography/selected-works/figure.png",
+        src: assetPath("/images/photography/selected-works/figure.png"),
         alt: "Replaceable vertical selected work placeholder.",
         width: 900,
         height: 1300,
@@ -176,7 +177,7 @@ export const photoCollections: PhotoCollection[] = [
       },
       {
         title: "Threshold",
-        src: "/images/photography/selected-works/threshold.png",
+        src: assetPath("/images/photography/selected-works/threshold.png"),
         alt: "Replaceable square selected work placeholder.",
         width: 1100,
         height: 1100,
