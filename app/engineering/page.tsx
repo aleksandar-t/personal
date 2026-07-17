@@ -35,7 +35,7 @@ export default function EngineeringPage() {
         <SectionHeading
           eyebrow="How Aleksandar thinks"
           title="The work is technical, but the judgment is human."
-          intro="This page avoids the keyword wall by organizing engineering around decisions and ownership."
+          intro="This page keeps the private projects private and organizes the public engineering story around decisions, ownership, and trust."
         />
         <div className="principle-grid">
           {engineeringPrinciples.map((principle) => (
@@ -67,9 +67,10 @@ export default function EngineeringPage() {
         <MotionReveal className="prose-column">
           <p>{engineeringProfile.publicNote}</p>
           <p>
-            For the engineering side, the strongest public signal right now is
-            the professional profile: senior .NET work, architecture, technical
-            leadership, mentoring, delivery, and production ownership.
+            The strongest public signal right now is the professional profile:
+            senior .NET work, architecture, technical leadership, mentoring,
+            delivery, production ownership, and the reputation of someone who
+            gets difficult work across the line.
           </p>
           <div className="resource-links">
             <Link href={engineeringProfile.profileUrl}>View LinkedIn profile</Link>

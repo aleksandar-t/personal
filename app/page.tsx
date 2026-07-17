@@ -44,8 +44,8 @@ export default function Home() {
             Writer.
           </p>
           <p className="hero-support">
-            Different mediums. The same instinct: to look beneath the obvious,
-            remove noise, and reveal the relationship.
+            Different mediums. The same instinct: look beneath the obvious,
+            remove noise, and let the relationship reveal itself.
           </p>
           <div className="hero-actions">
             <Link href="#worlds">Explore the work</Link>
@@ -59,7 +59,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Manifesto"
             title="The disciplines are not separate worlds."
-            intro="They are different instruments for the same kind of attention."
+            intro="They are different instruments for one kind of attention."
           />
           <div className="manifesto-copy">
             {manifesto.map((line) => (

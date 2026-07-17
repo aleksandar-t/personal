@@ -5,9 +5,9 @@ export const siteIdentity = {
   name: "Aleksandar Tomovski",
   roleLine: "Software Engineer. Photographer. Filmmaker. Writer.",
   statement:
-    "One way of seeing, expressed through code, light, movement, and language.",
+    "One way of seeing, expressed through structure, light, movement, and language.",
   alternate:
-    "I build systems, frame moments, make films, and write questions into books.",
+    "I build systems, frame stages, make films about observation, and write into the questions.",
   principle: "Never sacrifice curiosity for cleverness.",
   closing: "Until the next state.",
   heroImage: {
@@ -30,12 +30,12 @@ export const navigation: NavItem[] = [
 ];
 
 export const manifesto = [
-  "I have never experienced these disciplines as separate worlds.",
-  "Engineering taught me to look for structure.",
-  "Photography taught me to remove distraction.",
-  "Film taught me to shape experience through time.",
-  "Writing taught me to remain inside a question.",
-  "Different instruments. The same way of seeing.",
+  "The same question keeps changing costume.",
+  "In engineering, it becomes structure: systems that can be understood, owned, and changed without drama.",
+  "In photography, it becomes attention: mountain height, city street, backstage silence, body, gesture, light.",
+  "In film, it becomes time: a performer alone on a dark stage, and the strange pressure of an absent observer.",
+  "In writing, it becomes dialogue: a photon, a human mind, an artificial one, and the humility to keep asking.",
+  "The medium changes. The relationship remains.",
 ];
 
 export const signatureQuote = [
@@ -51,7 +51,7 @@ export const homeWorlds: HomeWorld[] = [
     eyebrow: "Light and removal",
     href: "/photography",
     description:
-      "Artistic photography rooted in observation, intimacy, theatre, silence, and the exact moment where distraction falls away.",
+      "Photography that began in nature and mountain heights, moved through city streets, and now often returns to women, ballet, theatre, costume, light, and the intimacy before performance.",
     featured: "Featured collection: Behind the Curtains",
     image: {
       src: assetPath("/images/photography/behind-the-curtains/hero.png"),
@@ -66,7 +66,7 @@ export const homeWorlds: HomeWorld[] = [
     eyebrow: "Movement and absence",
     href: "/film",
     description:
-      "Short cinematic work that treats time, performance, and observation as living relationships rather than answers.",
+      "The Paradox and related video work use dance, theatre, rehearsal, and empty rooms to ask what changes when art is made without a witness.",
     featured: "Featured film: The Paradox",
     image: {
       src: assetPath("/images/film/the-paradox/hero.png"),
@@ -81,7 +81,7 @@ export const homeWorlds: HomeWorld[] = [
     eyebrow: "Language and questions",
     href: "/writing",
     description:
-      "A philosophical book shaped through curiosity, relationship, experience, and the unusual meeting of human and artificial thought.",
+      "One Honest Conversation begins with a photon and becomes a philosophical dialogue about consciousness, AI, art, relationships, perception, and experience.",
     featured: "Featured book: One Honest Conversation",
     image: {
       src: assetPath("/images/book/one-honest-conversation.png"),
@@ -96,7 +96,7 @@ export const homeWorlds: HomeWorld[] = [
     eyebrow: "Structure and change",
     href: "/engineering",
     description:
-      "Software architecture, technical leadership, mentoring, and systems built to become clearer under pressure.",
+      "Public professional work in software architecture, technical leadership, mentoring, and systems that have to become clearer under pressure.",
     featured: "Public profile: LinkedIn",
     image: {
       src: assetPath("/images/engineering/systems-placeholder.png"),
@@ -108,7 +108,7 @@ export const homeWorlds: HomeWorld[] = [
 ];
 
 export const aboutCopy = [
-  "I am Aleksandar Tomovski, a software engineer, photographer, filmmaker, and writer from Skopje.",
-  "The disciplines look different from the outside. From where I stand, they are variations of the same work: observing carefully, removing noise, recognizing structure, and creating enough space for something honest to emerge.",
-  "In engineering, that means systems that can be understood, owned, and changed. In photography, it means letting the frame become quiet enough for the relationship to appear. In film, it means shaping attention through time. In writing, it means remaining faithful to the question before rushing toward the clever answer.",
+  "I am Aleksandar Tomovski: born in Skopje, a software engineer by profession, and a photographer, filmmaker, and writer in the remaining hours where the same questions refuse to clock out.",
+  "The public biography looks like several lives placed side by side. From inside it, the pattern is simpler: observe carefully, remove noise, recognize structure, and make enough room for an honest relationship to appear.",
+  "In engineering, that relationship is between people, systems, pressure, and change. In photography, it is between body, light, shadow, vulnerability, and the person allowed to remain human inside the frame. In film, it is between performance and witness. In writing, it is between curiosity and the answer that has not earned the right to arrive yet.",
 ];

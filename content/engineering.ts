@@ -4,12 +4,12 @@ export const engineeringProfile = {
   title: "Engineering",
   subtitle: "Systems that can be understood, owned, and changed.",
   summary:
-    "Aleksandar is an experienced software engineer, architect, technical lead, and mentor with more than 15 years of software engineering experience.",
+    "Aleksandar's public engineering story is anchored in senior software engineering, architecture, technical leadership, mentoring, and more than 15 years of building and owning production systems. Public recommendations around his work point to a consistent pattern: dedication, depth of knowledge, deadline-aware delivery, analytical thinking, and the ability to lead people through difficult work.",
   profileUrl: "https://www.linkedin.com/in/aleksandartomovski/",
   practices: [
-    "Senior and Principal .NET engineering",
-    "Technical leadership and team leadership",
-    "Backend and distributed systems",
+    "Senior and principal .NET engineering",
+    "Technical leadership, team leadership, and delivery ownership",
+    "Backend architecture and distributed systems",
     "Clean Architecture, SOLID, and pragmatic domain-driven design",
     "C#, .NET, ASP.NET Core, and EF Core",
     "REST APIs and external integrations",
@@ -21,17 +21,18 @@ export const engineeringProfile = {
     "CI/CD and production releases",
     "Performance, reliability, logging, monitoring, and resilience",
     "Mentoring, interviewing, code review, and engineering standards",
+    "Analytical problem solving under deadlines",
     "Ownership of existing or inherited systems",
     "Incremental modernization over unnecessary rewrites",
   ],
   publicNote:
-    "The public engineering page is intentionally focused on professional experience, technical judgment, leadership, and architecture. Personal products stay off this page until they are ready to be shown.",
+    "For now, this page stays at professional altitude: public LinkedIn material, technical judgment, leadership, mentoring, and delivery. Personal products and experiments stay private until they are ready to stand in daylight.",
 };
 
 export const engineeringPrinciples = [
   {
     title: "Architecture",
-    text: "Structure is useful only when it makes future change calmer, clearer, and less theatrical.",
+    text: "Structure is useful only when it makes future change calmer, clearer, and easier for other people to own.",
   },
   {
     title: "Reliability",
@@ -43,7 +44,7 @@ export const engineeringPrinciples = [
   },
   {
     title: "Leadership",
-    text: "Technical leadership is partly judgment, partly communication, and partly creating conditions where others can think well.",
+    text: "Technical leadership is partly judgment, partly communication, and partly creating conditions where others can think clearly.",
   },
   {
     title: "Ownership",

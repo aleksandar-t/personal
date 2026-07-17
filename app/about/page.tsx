@@ -17,15 +17,15 @@ const identityThreads = [
   },
   {
     title: "Photography practice",
-    text: "A practice rooted in careful observation, international salon experience, juror work, exhibition, and the ongoing search for the quiet relation inside the frame.",
+    text: "A practice that began in nature and mountain heights, moved through city streets, and found a recurring stage in ballet, theatre, portraiture, and the quiet relation inside the frame.",
   },
   {
     title: "Filmmaking",
-    text: "A cinematic extension of the same attention: time, movement, performance, absence, and the question of who is observing whom.",
+    text: "A cinematic extension of the same attention: time, movement, performance, absence, and the question of whether a gesture changes when no one is there to receive it.",
   },
   {
     title: "Writing",
-    text: "A philosophical project shaped by curiosity, conversation, humility, and the refusal to reduce experience to a convenient answer.",
+    text: "A philosophical dialogue shaped by curiosity, consciousness, AI, art, relationship, experience, and the refusal to reduce a living question to a convenient answer.",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function AboutPage() {
             Mentoring, interviewing, code review, and engineering standards are
             not separate from creative work. They are forms of attention toward
             people, decisions, and the conditions under which a team can become
-            less noisy and more honest.
+            less noisy, more honest, and more capable of owning the work together.
           </p>
         </MotionReveal>
       </section>

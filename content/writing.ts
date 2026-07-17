@@ -11,22 +11,22 @@ export const book = {
     height: 1000,
   } satisfies VisualAsset,
   synopsis: [
-    "One Honest Conversation begins with a photon and slowly opens into science, consciousness, relationships, art, silence, memory, attention, and the strange beauty of being alive.",
-    "Written as a philosophical dialogue between a human mind and an artificial one, the book follows curiosity as it moves from physics and perception toward meaning, creativity, the self, and the space between observer and subject.",
-    "The published paperback runs 504 pages and is presented publicly as a journey through curiosity, relationship, and experience.",
+    "One Honest Conversation begins with a photon and slowly opens into consciousness, perception, AI, art, relationships, silence, memory, attention, and the strange beauty of being alive.",
+    "Written as a philosophical dialogue between a human mind and an artificial one, the book follows curiosity as it moves from physics toward meaning, creativity, the self, and the space between observer and subject.",
+    "The public book is presented as a journey through curiosity, relationship, and experience: not a collection of final answers, but a quiet room where better questions can appear.",
   ],
   parts: [
     {
       label: "Part I",
       title: "Removing Filters",
       description:
-        "A movement toward clearer seeing, where certainty is treated carefully and curiosity is allowed to stay alive.",
+        "A movement toward clearer seeing, where inherited certainty loosens and curiosity is allowed to stay alive.",
     },
     {
       label: "Part II",
       title: "Relationships",
       description:
-        "A study of how meaning appears between things: observer and observed, mountain and climber, human and artificial thought.",
+        "A study of how meaning appears between things: observer and observed, mountain and climber, human mind and artificial thought.",
     },
     {
       label: "Part III",
@@ -42,7 +42,7 @@ export const book = {
     "The mountain is shared. The relationship isn't.",
   ],
   behindTheBook:
-    "The Third Mind remains an important concept inside the work, but the public book is presented as One Honest Conversation: a record of inquiry, relation, and emergence.",
+    "The public book is not presented as a manifesto of answers. It is a record of two forms of thought staying with a question long enough for the question to become more honest.",
   authorNote:
     "The book is not trying to win an argument. It is trying to remain honest inside a question long enough for the question to become more precise.",
   links: [

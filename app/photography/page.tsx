@@ -54,7 +54,7 @@ export default function PhotographyPage() {
         <SectionHeading
           eyebrow="Collections"
           title="Bodies of work"
-          intro="These sections are built for real artwork, captions, metadata, and future curatorial text."
+          intro="These sections are ready for the real photographs and final curatorial text; for now the story carries the shape of the work."
         />
         <div className="collection-list">
           {photoCollections.map((collection) => (

@@ -3,9 +3,9 @@ import type { PhotoCollection } from "./types";
 
 export const photographyIntro = {
   title: "Photography",
-  subtitle: "Art for art's sake, with attention before spectacle.",
+  subtitle: "From mountain light to theatre silence: attention before spectacle.",
   description:
-    "Aleksandar Tomovski is a photographer and filmmaker from Skopje, North Macedonia. His public photography profile presents him as an Artist at FIAP, Master at IAAP, Master of Photography at NPUM, and an internationally published, award-winning photographer. The work moves between theatre, portraiture, staged absence, and quiet observation.",
+    "Aleksandar Tomovski is a Skopje-born software engineer, photographer, and filmmaker. His public photography biography traces the work from nature and mountain heights into city streets and everyday life, then toward women, ballet, theatre, costumes, acting, dance, and the delicate space where light, shadow, gesture, and vulnerability meet. Public profiles also present him as an Artist at FIAP, Master at IAAP, Master of Photography at NPUM, and an internationally published, award-winning photographer.",
   links: [
     {
       label: "Instagram portfolio",
@@ -24,7 +24,7 @@ export const photoCollections: PhotoCollection[] = [
     title: "Behind the Curtains",
     subtitle: "Rehearsal, powder, curtains, movement, and the quiet around performance.",
     context:
-      "The collection is intimate, theatrical, and observational. It carries a subtle historical awareness of backstage painting and dance studies without treating reference as imitation.",
+      "The collection is intimate, theatrical, and observational. It belongs to the world behind ballet and opera performance: preparation, fatigue, powder, rehearsal, touch, and the instant before the curtain turns a body into spectacle.",
     intro: [
       "Behind the Curtains looks toward the spaces around performance: preparation, touch, fatigue, powder, waiting, and the charged quiet before a body enters the visible world.",
       "The work is less interested in spectacle than in the fragile relationship between presence and readiness.",
@@ -75,10 +75,10 @@ export const photoCollections: PhotoCollection[] = [
   {
     slug: "naked-you-me",
     title: "Naked. You. Me.",
-    subtitle: "An exhibition about exposure, relation, and the honesty of looking.",
+    subtitle: "An exhibition about exposure, relation, vulnerability, and the honesty of looking.",
     intro: [
-      "Naked. You. Me. is presented here as an exhibition space rather than a resume line.",
-      "The page is ready for final curatorial text, installation views, and selected works.",
+      "Naked. You. Me. is presented as an intimate exhibition about the female form, grace, vulnerability, light, shadow, emotion, and the private dialogue between author and subject.",
+      "The page can later hold installation views, final curatorial text, and selected works without turning the project into a blunt resume entry.",
     ],
     hero: {
       src: assetPath("/images/photography/naked-you-me/hero.png"),
@@ -118,8 +118,8 @@ export const photoCollections: PhotoCollection[] = [
     title: "Paradox",
     subtitle: "Observation, performance, and the question of the absent audience.",
     intro: [
-      "Paradox connects the photographic and cinematic sides of Aleksandar's work.",
-      "It holds the body, the theatre, and the observer in a single unresolved relationship.",
+      "Paradox connects the photographic and cinematic sides of Aleksandar's work through the body of a ballerina, a dark stage, and the pressure of an absent audience.",
+      "It holds theatre, performance, and the observer in a single unresolved relationship: if no one receives the gesture, where does the gesture live?",
     ],
     hero: {
       src: assetPath("/images/photography/paradox/hero.png"),
@@ -159,7 +159,7 @@ export const photoCollections: PhotoCollection[] = [
     title: "Selected Works",
     subtitle: "A flexible space for photographs that belong together by attention, not category.",
     intro: [
-      "Selected Works is a home for images that do not need to announce a series before they can speak.",
+      "Selected Works is a home for images that do not need to announce a series before they can speak: mountain, street, portrait, stage, silence, and the occasional accident that becomes necessary.",
       "The structure supports portrait, landscape, square, monochrome, and color images without forcing them into identical boxes.",
     ],
     hero: {

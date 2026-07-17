@@ -5,7 +5,7 @@ export const primaryFilm: FilmProject = {
   title: "The Paradox",
   slug: "the-paradox",
   logline:
-    "A one-minute film exploring observation, performance, existence, and the relationship between an artist and an absent audience.",
+    "A one-minute Black Swan performance in an empty theatre, shaped around the paradox of whether an artwork fully exists when no one is there to witness it.",
   hero: {
     src: assetPath("/images/film/the-paradox/hero.png"),
     alt: "Replaceable cinematic hero placeholder for The Paradox.",
@@ -35,13 +35,14 @@ export const primaryFilm: FilmProject = {
     embedUrl: "https://www.youtube-nocookie.com/embed/_2E8QuuNgIE",
   },
   synopsis: [
-    "A ballerina performs as the Black Swan in an empty theatre, her breath and movement held inside the quiet of an absent audience.",
-    "The film connects a present-day stage reality, artists performing and rehearsing in empty theatres, with the older philosophical problem of existence without observation.",
-    "It does not reduce that absence to loneliness or spectacle. It asks what kind of relationship exists between the artist, the act, the observer, and the absence of observation.",
+    "Using the idea of observed reality as a cinematic pressure point, The Paradox places a ballerina alone on a dark stage in a Black Swan variation.",
+    "The film connects that philosophical problem to the pandemic-era reality of stage artists rehearsing and performing without live audiences: art being made in rooms where the usual witness has disappeared.",
+    "It does not reduce absence to loneliness or spectacle. It asks a cleaner and more dangerous question: if a perfect minute happens in space and time and no observer receives it, where does it live?",
   ],
   directorNote: [
-    "The Paradox is not only asking whether art exists without an audience.",
-    "It is exploring what changes when the work is made, witnessed, missed, remembered, or left in the room after the room has gone quiet.",
+    "The Paradox begins where stage art and quantum metaphor touch: the observer changes the room.",
+    "The camera records the performance, but the film keeps asking whether recording is the same as witnessing.",
+    "That uncertainty is the point.",
   ],
   credits: [
     { role: "Director", name: "Aleksandar Tomovski" },
@@ -83,7 +84,7 @@ export const primaryFilm: FilmProject = {
     ],
   },
   festivalStatus:
-    "Festival selections, screenings, and additional public reviews will be added here when they are public.",
+    "Public IMDb festival pages list awards and recognitions for The Paradox including Best Micro Short Drama at Berlin Flash Film Festival, Super Short Film at Art Film Awards, Best Dance Performance at Stockholm City Film Festival, One Minute Film at Calcutta International Cult Film Festival, and additional one-minute / super-short recognitions.",
 };
 
 export const futureFilms = [

@@ -127,7 +127,7 @@ export default function FilmPage() {
       <section className="content-band two-column-band">
         <MotionReveal>
           <p className="eyebrow">Festival / review area</p>
-          <h2>Public notes will live here.</h2>
+          <h2>Public recognition, without drowning the film.</h2>
           <p>{primaryFilm.festivalStatus}</p>
         </MotionReveal>
         <MotionReveal>
