@@ -41,8 +41,8 @@ export default function WritingPage() {
 
       <section className="content-band">
         <SectionHeading
-          eyebrow="Structure"
-          title="Three movements through curiosity, relationship, and experience."
+          eyebrow="Three movements"
+          title="Curiosity, relationship, experience."
         />
         <div className="book-parts">
           {book.parts.map((part) => (

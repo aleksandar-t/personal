@@ -3,6 +3,8 @@ import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
 const templateRoot = new URL("../", import.meta.url);
+const draftCopyPattern =
+  /placeholder|replaceable|to be added|replace-with-email|Test the placeholder form|Curtain Edge|Room Study|Frames from the film|work stays central|distinctions stay compact|public record belongs lower|first impression should be|sections are organized|premature product catalogue|can be added|This page is deliberately scoped|public book is presented|should feel like|structure supports|without forcing them into identical boxes|home for images|public signal|Public IMDb festival pages|without drowning the film|What belongs here/i;
 
 async function render(pathname = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -40,7 +42,7 @@ test("server-renders Aleksandar's personal universe homepage", async () => {
   assert.match(html, /Different mediums/);
   assert.match(html, /The work changes medium/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|react-loading-skeleton/i);
-  assert.doesNotMatch(html, /placeholder|replaceable|to be added|replace-with-email/i);
+  assert.doesNotMatch(html, draftCopyPattern);
 });
 
 test("keeps individual pages specific and free of public placeholder copy", async () => {
@@ -61,11 +63,7 @@ test("keeps individual pages specific and free of public placeholder copy", asyn
     const response = await render(pathname);
     assert.equal(response.status, 200, pathname);
     const html = await response.text();
-    assert.doesNotMatch(
-      html,
-      /placeholder|replaceable|to be added|replace-with-email|Test the placeholder form|Curtain Edge|Room Study|Frames from the film/i,
-      pathname,
-    );
+    assert.doesNotMatch(html, draftCopyPattern, pathname);
   }
 });
 
@@ -97,6 +95,7 @@ test("keeps content editable and starter-only pieces removed", async () => {
   assert.match(writing, /https:\/\/www\.amazon\.com\/One-Honest-Conversation/);
   assert.match(photography, /https:\/\/www\.instagram\.com\/tomovski\.photography\//);
   assert.match(photography, /https:\/\/theiaap\.com\/profile\/7373\//);
+  assert.match(await readFile(new URL("../content/awards.ts", import.meta.url), "utf8"), /MIAAP/);
   assert.match(engineering, /https:\/\/www\.linkedin\.com\/in\/aleksandartomovski\//);
   assert.match(engineering, /export const technicalProjects: TechnicalProject\[\] = \[\];/);
   assert.match(packageJson, /"framer-motion"/);

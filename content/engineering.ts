@@ -4,7 +4,7 @@ export const engineeringProfile = {
   title: "Engineering",
   subtitle: "Systems that can be understood, owned, and changed.",
   summary:
-    "Aleksandar's public engineering story is anchored in senior software engineering, architecture, technical leadership, mentoring, and more than 15 years of building and owning production systems. The public signal is not a catalogue of side projects; it is a reputation for depth of knowledge, deadline-aware delivery, analytical thinking, professionalism, and the ability to help people move through difficult technical work.",
+    "Aleksandar's engineering work is anchored in senior software engineering, architecture, technical leadership, mentoring, and more than 15 years of building and owning production systems. The pattern is depth of knowledge, deadline-aware delivery, analytical thinking, professionalism, and the ability to help people move through difficult technical work.",
   profileUrl: "https://www.linkedin.com/in/aleksandartomovski/",
   practices: [
     "Senior and principal .NET engineering",
@@ -26,7 +26,7 @@ export const engineeringProfile = {
     "Incremental modernization over unnecessary rewrites",
   ],
   publicNote:
-    "This page is deliberately scoped to the public professional profile: engineering judgment, leadership, mentoring, delivery, and production ownership. Personal products and experiments stay offstage until they are ready to be introduced on their own terms.",
+    "Engineering is where the habit becomes discipline: asking better questions, reducing ambiguity, reading inherited systems carefully, and helping teams ship without turning pressure into noise.",
 };
 
 export const engineeringPrinciples = [

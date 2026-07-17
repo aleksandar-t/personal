@@ -13,7 +13,7 @@ export const book = {
   synopsis: [
     "One Honest Conversation begins with a photon and slowly opens into consciousness, perception, AI, art, relationships, silence, memory, attention, and the strange beauty of being alive.",
     "Written as a philosophical dialogue between a human mind and an artificial one, the book follows curiosity as it moves from physics toward meaning, creativity, the self, and the space between observer and subject.",
-    "The public book is presented as a journey through curiosity, relationship, and experience: not a collection of final answers, but a quiet room where better questions can appear.",
+    "It moves through curiosity, relationship, and experience without pretending that a living question owes anyone a convenient answer.",
   ],
   parts: [
     {

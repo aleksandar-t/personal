@@ -50,7 +50,7 @@ export default function PhotographyPage() {
         <SectionHeading
           eyebrow="Collections"
           title="Bodies of work"
-          intro="The sections are organized around the real shape of the practice: backstage intimacy, exposed relation, theatre absence, and selected images joined by attention rather than category."
+          intro="Backstage intimacy, exposed relation, theatre absence, mountain light, street fragments, and the human body held without spectacle."
         />
         <div className="collection-list">
           {photoCollections.map((collection) => (
@@ -71,8 +71,7 @@ export default function PhotographyPage() {
       <section className="content-band recognition-section">
         <SectionHeading
           eyebrow="Recognition"
-          title="Selected recognition."
-          intro="The work stays central. The distinctions stay compact."
+          title="Distinctions, exhibitions, and juries."
         />
         <ul className="recognition-list">
           {photographyRecognition.map((item) => (

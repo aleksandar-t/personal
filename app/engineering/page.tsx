@@ -35,7 +35,7 @@ export default function EngineeringPage() {
         <SectionHeading
           eyebrow="How Aleksandar thinks"
           title="The work is technical, but the judgment is human."
-          intro="The public engineering story is organized around decisions, ownership, delivery, and trust — not a premature product catalogue."
+          intro="Decisions, ownership, delivery, and trust under pressure."
         />
         <div className="principle-grid">
           {engineeringPrinciples.map((principle) => (
@@ -67,11 +67,10 @@ export default function EngineeringPage() {
         <MotionReveal className="prose-column">
           <p>{engineeringProfile.publicNote}</p>
           <p>
-            The strongest public signal is the professional pattern: senior .NET
-            work, architecture, technical leadership, mentoring, production
-            ownership, and recommendations that point to dedication, analytical
-            depth, deadline awareness, and the ability to get difficult work
-            across the line.
+            The professional pattern is senior .NET work, architecture,
+            technical leadership, mentoring, production ownership, and
+            recommendations that point to dedication, analytical depth, deadline
+            awareness, and the ability to get difficult work across the line.
           </p>
           <div className="resource-links">
             <SmartLink href={engineeringProfile.profileUrl}>

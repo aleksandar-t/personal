@@ -63,7 +63,7 @@ export const primaryFilm: FilmProject = {
     ],
   },
   festivalStatus:
-    "Public IMDb festival pages list awards and recognitions for The Paradox including Best Micro Short Drama at Berlin Flash Film Festival, Super Short Film at Art Film Awards, Best Dance Performance at Stockholm City Film Festival, One Minute Film at Calcutta International Cult Film Festival, and additional one-minute / super-short recognitions.",
+    "The Paradox has received micro-short, one-minute, super-short, and dance-performance recognition across international festival contexts including Berlin Flash Film Festival, Art Film Awards, Stockholm City Film Festival, and Calcutta International Cult Film Festival.",
 };
 
 export const filmDirection = [

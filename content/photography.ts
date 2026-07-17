@@ -5,7 +5,7 @@ export const photographyIntro = {
   title: "Photography",
   subtitle: "From mountain light to theatre silence: attention before spectacle.",
   description:
-    "Aleksandar's photography moves from mountain light and city streets toward ballet, theatre, costume, body, shadow, and the private tension before performance. The public record belongs lower on the page; the first impression should be the way of looking.",
+    "Aleksandar's photography began in mountain light and city streets, then moved toward ballet, theatre, costume, body, shadow, and the charged quiet before performance.",
   links: [
     {
       label: "Instagram portfolio",
@@ -72,10 +72,10 @@ export const photoCollections: PhotoCollection[] = [
   {
     slug: "selected-works",
     title: "Selected Works",
-    subtitle: "A flexible space for photographs that belong together by attention, not category.",
+    subtitle: "Mountain light, street fragments, portraits, stage silence, and necessary accidents.",
     intro: [
-      "Selected Works is a home for images that do not need to announce a series before they can speak: mountain, street, portrait, stage, silence, and the occasional accident that becomes necessary.",
-      "The structure supports portrait, landscape, square, monochrome, and color images without forcing them into identical boxes.",
+      "Selected Works gathers photographs connected by attention rather than category: mountain, street, portrait, stage, silence, and the occasional accident that becomes necessary.",
+      "The photographs move between formats and atmospheres without asking for a single costume.",
     ],
     hero: {
       src: assetPath("/images/photography/selected-works/hero.png"),

@@ -20,8 +20,8 @@ export default function ContactPage() {
         </div>
         <p>
           Public doors into the work: engineering profile, photography archive,
-          film projects, and the book. A direct inbox can be added when the
-          public contact channel is ready.
+          film projects, and the book. Start with the path closest to the
+          conversation you want to have.
         </p>
       </section>
 
@@ -42,7 +42,7 @@ export default function ContactPage() {
         </MotionReveal>
 
         <MotionReveal className="contact-note">
-          <p className="eyebrow">What belongs here</p>
+          <p className="eyebrow">Conversations</p>
           <h2>Work, collaboration, and conversations with a real reason.</h2>
           <p>
             Engineering conversations can start through LinkedIn. Photography,

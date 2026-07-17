@@ -129,7 +129,7 @@ export default function FilmPage() {
       <section className="content-band two-column-band">
         <MotionReveal>
           <p className="eyebrow">Public recognition</p>
-          <h2>Public recognition, without drowning the film.</h2>
+          <h2>Festival recognition for a one-minute question.</h2>
           <p>{primaryFilm.festivalStatus}</p>
         </MotionReveal>
         <MotionReveal>

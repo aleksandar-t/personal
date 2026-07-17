@@ -65,7 +65,7 @@ export default function Home() {
         <SectionHeading
           eyebrow="Selected worlds"
           title="Code, light, movement, language."
-          intro="Engineering profile, awarded photography, short film, and philosophical writing should feel like one mind changing instruments."
+          intro="Engineering profile, awarded photography, short film, and philosophical writing: one mind changing instruments."
         />
         <div className="worlds-list">
           {homeWorlds.map((world, index) => (
