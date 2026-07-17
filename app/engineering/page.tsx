@@ -33,9 +33,9 @@ export default function EngineeringPage() {
 
       <section className="content-band">
         <SectionHeading
-          eyebrow="How Aleksandar thinks"
-          title="The work is technical, but the judgment is human."
-          intro="Decisions, ownership, delivery, and trust under pressure."
+          eyebrow="Engineering work"
+          title="Backend systems, delivery, and team ownership."
+          intro="C#/.NET, APIs, data, messaging, cloud delivery, production releases, mentoring, and technical leadership."
         />
         <div className="principle-grid">
           {engineeringPrinciples.map((principle) => (
@@ -50,7 +50,7 @@ export default function EngineeringPage() {
       <section className="content-band practice-section">
         <SectionHeading
           eyebrow="Practice"
-          title="Capabilities that support the thinking."
+          title="Technology and working surface."
         />
         <ul className="practice-list">
           {engineeringProfile.practices.map((practice) => (
@@ -62,15 +62,15 @@ export default function EngineeringPage() {
       <section className="content-band two-column-band">
         <MotionReveal>
           <p className="eyebrow">Professional profile</p>
-          <h2>A public profile built on calm ownership under pressure.</h2>
+          <h2>Senior engineering, architecture, and production responsibility.</h2>
         </MotionReveal>
         <MotionReveal className="prose-column">
           <p>{engineeringProfile.publicNote}</p>
           <p>
-            The professional pattern is senior .NET work, architecture,
-            technical leadership, mentoring, production ownership, and
-            recommendations that point to dedication, analytical depth, deadline
-            awareness, and the ability to get difficult work across the line.
+            The public LinkedIn record and recommendations point to a practical
+            pattern: dedication, professionalism, deep technical knowledge,
+            deadline awareness, analytical capability, energy, and the ability
+            to manage people while still owning the technical detail.
           </p>
           <div className="resource-links">
             <SmartLink href={engineeringProfile.profileUrl}>

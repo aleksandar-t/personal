@@ -4,7 +4,7 @@ import test from "node:test";
 
 const templateRoot = new URL("../", import.meta.url);
 const draftCopyPattern =
-  /placeholder|replaceable|to be added|replace-with-email|Test the placeholder form|Curtain Edge|Room Study|Frames from the film|work stays central|distinctions stay compact|public record belongs lower|first impression should be|sections are organized|premature product catalogue|can be added|This page is deliberately scoped|public book is presented|should feel like|structure supports|without forcing them into identical boxes|home for images|public signal|Public IMDb festival pages|without drowning the film|What belongs here/i;
+  /placeholder|replaceable|to be added|replace-with-email|Test the placeholder form|Curtain Edge|Room Study|Frames from the film|work stays central|distinctions stay compact|public record belongs lower|first impression should be|sections are organized|premature product catalogue|can be added|This page is deliberately scoped|public book is presented|should feel like|structure supports|without forcing them into identical boxes|home for images|public signal|Public IMDb festival pages|without drowning the film|What belongs here|The work is technical, but the judgment is human|How Aleksandar thinks|Creating enough room for better thinking/i;
 
 async function render(pathname = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -64,6 +64,23 @@ test("keeps individual pages specific and free of public placeholder copy", asyn
     assert.equal(response.status, 200, pathname);
     const html = await response.text();
     assert.doesNotMatch(html, draftCopyPattern, pathname);
+
+    if (pathname === "/writing") {
+      assert.match(html, /class="book-quote"/, pathname);
+      assert.match(html, /<blockquote>/, pathname);
+    }
+
+    if (pathname === "/engineering") {
+      assert.match(html, /Backend systems, delivery, and team ownership/i, pathname);
+      assert.match(html, /C#\/\.NET/i, pathname);
+    }
+
+    if (pathname === "/about") {
+      assert.match(html, /I am Aleksandar Tomovski/i, pathname);
+      assert.match(html, /I was born in 1985 in Skopje/i, pathname);
+      assert.match(html, /more than 15 years of senior \.NET\/backend experience/i, pathname);
+      assert.match(html, /Master IAAP \/ MIAAP/i, pathname);
+    }
   }
 });
 

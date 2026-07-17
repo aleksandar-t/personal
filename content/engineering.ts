@@ -4,7 +4,7 @@ export const engineeringProfile = {
   title: "Engineering",
   subtitle: "Systems that can be understood, owned, and changed.",
   summary:
-    "Aleksandar's engineering work is anchored in senior software engineering, architecture, technical leadership, mentoring, and more than 15 years of building and owning production systems. The pattern is depth of knowledge, deadline-aware delivery, analytical thinking, professionalism, and the ability to help people move through difficult technical work.",
+    "Aleksandar's engineering work is anchored in more than 15 years of senior software engineering, C#/.NET backend development, architecture, technical leadership, mentoring, and production ownership. The public recommendations around the work point to dedication, professionalism, deep technical knowledge, deadline orientation, analytical thinking, energy, and the ability to manage people through difficult delivery.",
   profileUrl: "https://www.linkedin.com/in/aleksandartomovski/",
   practices: [
     "Senior and principal .NET engineering",
@@ -26,33 +26,33 @@ export const engineeringProfile = {
     "Incremental modernization over unnecessary rewrites",
   ],
   publicNote:
-    "Engineering is where the habit becomes discipline: asking better questions, reducing ambiguity, reading inherited systems carefully, and helping teams ship without turning pressure into noise.",
+    "The engineering profile is built around systems that have to survive real product pressure: APIs, data, integrations, messaging, deployments, monitoring, reviews, releases, and teams that need clear technical direction.",
 };
 
 export const engineeringPrinciples = [
   {
-    title: "Architecture",
-    text: "Structure is useful only when it makes future change calmer, clearer, and easier for other people to own.",
+    title: "Backend architecture",
+    text: "C#/.NET services, REST APIs, domain boundaries, EF Core, SQL, external integrations, and codebases that need to stay readable after the first delivery push.",
   },
   {
-    title: "Reliability",
-    text: "Production systems deserve boring confidence: logs that speak, failures that degrade, and boundaries that hold.",
+    title: "Cloud delivery",
+    text: "Azure delivery, CI/CD, release discipline, environment configuration, logging, monitoring, and the operational work that keeps production predictable.",
   },
   {
-    title: "Product understanding",
-    text: "The system has to serve the real product journey, not only the diagram that looks elegant in isolation.",
+    title: "Data and messaging",
+    text: "SQL modeling, Redis caching, RabbitMQ and Azure Service Bus workflows, asynchronous processing, and failure paths that cannot be left vague.",
   },
   {
-    title: "Leadership",
-    text: "Technical leadership is partly judgment, partly communication, and partly creating conditions where others can think clearly.",
+    title: "Modernization",
+    text: "Improving inherited systems incrementally: separating concerns, adding tests, replacing fragile paths, and choosing steady refactoring over unnecessary rewrites.",
   },
   {
-    title: "Ownership",
-    text: "Inherited systems are not insults. They are conversations already in progress.",
+    title: "Team leadership",
+    text: "Mentoring engineers, interviewing, code review, engineering standards, and helping teams make consistent decisions under deadline pressure.",
   },
   {
-    title: "Building for change",
-    text: "The best abstraction is not the cleverest one. It is the one that keeps its promise when the product moves.",
+    title: "Product delivery",
+    text: "Translating business pressure into technical choices: scope, trade-offs, sequencing, stakeholder clarity, and delivery that still respects the system.",
   },
 ];
 

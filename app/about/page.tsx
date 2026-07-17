@@ -12,20 +12,20 @@ export const metadata: Metadata = {
 
 const identityThreads = [
   {
-    title: "Engineering career",
-    text: "More than 15 years of software engineering, architecture, leadership, mentoring, and responsibility for systems that need to keep working after the elegant meeting ends.",
+    title: "Software engineer",
+    text: "Senior .NET/backend engineering, APIs, architecture, data, messaging, integrations, cloud delivery, code review, mentoring, and production ownership across systems that have to keep working after the meeting ends.",
   },
   {
-    title: "Photography practice",
-    text: "A practice that began in nature and mountain heights, moved through city streets, and became internationally recognized through ballet, theatre, portraiture, exhibitions, salons, and the quiet relation inside the frame.",
+    title: "Photography",
+    text: "A practice that started with mountain light and city streets, then moved closer to ballet, theatre, costume, the body, vulnerability, and the quiet seconds before performance becomes public.",
   },
   {
-    title: "Filmmaking",
-    text: "A cinematic extension of the same attention: time, movement, performance, absence, and the question of whether a gesture changes when no one is there to receive it.",
+    title: "Filmmaker",
+    text: "Director of The Paradox, a one-minute Black Swan short built around performance, absence, recording, and whether a gesture changes when the live witness disappears.",
   },
   {
     title: "Writing",
-    text: "A philosophical dialogue shaped by curiosity, consciousness, AI, art, relationship, experience, and the refusal to reduce a living question to a convenient answer.",
+    text: "Author of One Honest Conversation, a philosophical dialogue that starts with a photon and moves through consciousness, AI, art, relationships, perception, and lived experience.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function AboutPage() {
       <section className="page-hero content-band about-hero">
         <div>
           <p className="eyebrow">About</p>
-          <h1>One way of seeing.</h1>
+          <h1>I am Aleksandar Tomovski.</h1>
         </div>
         <div className="prose-column">
           {aboutCopy.map((paragraph) => (
@@ -46,8 +46,8 @@ export default function AboutPage() {
 
       <section className="content-band">
         <SectionHeading
-          eyebrow="One identity"
-          title="Observing carefully, removing noise, recognizing structure."
+          eyebrow="What that means in practice"
+          title="Software systems, stage light, moving image, and language."
         />
         <div className="identity-list">
           {identityThreads.map((thread) => (
@@ -61,16 +61,20 @@ export default function AboutPage() {
 
       <section className="content-band two-column-band">
         <MotionReveal>
-          <p className="eyebrow">Mentoring and leadership</p>
-          <h2>Creating enough room for better thinking.</h2>
+          <p className="eyebrow">How I work with people</p>
+          <h2>Own the problem, explain the trade-offs, keep the deadline visible.</h2>
         </MotionReveal>
         <MotionReveal className="prose-column">
           <p>
-            Mentoring, interviewing, code review, and engineering standards are
-            not separate from creative work. They are forms of attention toward
-            people, decisions, pressure, and the conditions under which a team
-            can become less noisy, more honest, and more capable of owning the
-            work together.
+            My public professional recommendations repeatedly point to
+            dedication, professionalism, depth of knowledge, deadline
+            orientation, analytical capability, energy, and a natural ability
+            to manage people.
+          </p>
+          <p>
+            That matters because engineering is rarely just code. It is also
+            communication, judgment, trust, and leaving the next person with a
+            system they can actually understand.
           </p>
         </MotionReveal>
       </section>

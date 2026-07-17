@@ -1013,18 +1013,52 @@ h3 {
 
 .book-excerpt {
   display: grid;
-  gap: 14px;
+  gap: 18px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   padding: 42px 0;
 }
 
-.book-excerpt p {
+.book-quote {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  border-left: 2px solid var(--amber);
+  padding: 0 0 0 clamp(18px, 3vw, 28px);
+}
+
+.book-quote::before {
+  position: absolute;
+  top: -18px;
+  left: clamp(18px, 3vw, 28px);
+  color: rgba(196, 135, 82, 0.22);
+  content: "“";
+  font-family: var(--font-serif-stack);
+  font-size: clamp(3.4rem, 7vw, 6rem);
+  line-height: 1;
+  transform: translateX(-0.08em);
+}
+
+.book-quote blockquote {
+  margin: 0;
+}
+
+.book-quote p {
+  position: relative;
+  z-index: 1;
   margin: 0;
   color: var(--foreground);
   font-family: var(--font-serif-stack);
-  font-size: 2rem;
+  font-size: clamp(1.55rem, 2.6vw, 2.15rem);
   line-height: 1.28;
+}
+
+.book-quote figcaption {
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .resource-links,
@@ -1328,7 +1362,7 @@ h3 {
   }
 
   .closing-line,
-  .book-excerpt p {
+  .book-quote p {
     font-size: 1.75rem;
   }
 

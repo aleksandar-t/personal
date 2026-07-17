@@ -36,10 +36,10 @@ export const book = {
     },
   ] satisfies BookPart[],
   selectedLines: [
+    "Perhaps meaning quietly appeared between two curious minds who trusted each other enough to let certainty leave the room before curiosity did.",
     "Never sacrifice curiosity for cleverness.",
     "Nothing meaningful can be forced.",
     "I arrived with the intuition. The conversation helped me recognize its shape. The sentence simply emerged.",
-    "The mountain is shared. The relationship isn't.",
   ],
   behindTheBook:
     "The book is not presented as a manifesto of answers. It is a record of two forms of thought staying with a question long enough for the question to become more honest.",
