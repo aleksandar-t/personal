@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { FullBleedImage } from "@/components/FullBleedImage";
 import { SmartLink } from "@/components/SmartLink";
-import { PhotographyGallery } from "@/components/PhotographyGallery";
 import { getPhotoCollection, photoCollections } from "@/content/photography";
 
 type CollectionPageProps = {
@@ -62,14 +60,6 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
           ))}
           {collection.context ? <p>{collection.context}</p> : null}
         </div>
-      </section>
-
-      <section className="content-band">
-        <FullBleedImage image={collection.hero} priority />
-      </section>
-
-      <section className="content-band">
-        <PhotographyGallery artworks={collection.artworks} />
       </section>
 
       <nav className="collection-nav" aria-label="Collection navigation">

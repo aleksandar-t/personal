@@ -49,29 +49,7 @@ export const primaryFilm: FilmProject = {
     { role: "Performer", name: "Marija Kichevska" },
     { role: "Voice-over", name: "Andrew Cook" },
   ],
-  stills: [
-    {
-      src: assetPath("/images/film/the-paradox/empty-theatre.png"),
-      alt: "Empty theatre still from the world of The Paradox.",
-      width: 1500,
-      height: 900,
-      caption: "The room remains theatrical even when the audience is gone.",
-    },
-    {
-      src: assetPath("/images/film/the-paradox/black-swan.png"),
-      alt: "Black Swan performance still from The Paradox.",
-      width: 1100,
-      height: 1400,
-      caption: "A one-minute performance carries the pressure of being unseen.",
-    },
-    {
-      src: assetPath("/images/film/the-paradox/stage-shadow.png"),
-      alt: "Stage shadow and movement still from The Paradox.",
-      width: 1400,
-      height: 950,
-      caption: "The monochrome stage turns movement into a question about witness.",
-    },
-  ],
+  stills: [],
   review: {
     reviewer: "Sayantan Mukherjee",
     rating: "8/10",
@@ -88,7 +66,7 @@ export const primaryFilm: FilmProject = {
     "Public IMDb festival pages list awards and recognitions for The Paradox including Best Micro Short Drama at Berlin Flash Film Festival, Super Short Film at Art Film Awards, Best Dance Performance at Stockholm City Film Festival, One Minute Film at Calcutta International Cult Film Festival, and additional one-minute / super-short recognitions.",
 };
 
-export const futureFilms = [
+export const filmDirection = [
   "These works move between film, documentary observation, dance, theatre, photography, and performance.",
   "The continuing direction is not volume for its own sake, but a sharper language for rooms, bodies, rehearsal, witness, and absence.",
 ];

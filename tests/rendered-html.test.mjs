@@ -63,7 +63,7 @@ test("keeps individual pages specific and free of public placeholder copy", asyn
     const html = await response.text();
     assert.doesNotMatch(
       html,
-      /placeholder|replaceable|to be added|replace-with-email|Test the placeholder form/i,
+      /placeholder|replaceable|to be added|replace-with-email|Test the placeholder form|Curtain Edge|Room Study|Frames from the film/i,
       pathname,
     );
   }

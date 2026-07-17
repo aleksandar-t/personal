@@ -1,2 +1,2 @@
-:HL["/personal/_next/static/chunks/0fnxf8ro640n9.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"photography","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"naked-you-me","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"iBqc5pjVPy0n_L1VrMmvK"}
+:HL["/personal/_next/static/chunks/0742y23rbbjsl.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"photography","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"naked-you-me","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"e64MqSKy9xbOyKHKKGnzc"}

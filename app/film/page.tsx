@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { EditorialQuote } from "@/components/EditorialQuote";
-import { FilmStills } from "@/components/FilmStills";
 import { FullBleedImage } from "@/components/FullBleedImage";
 import { MotionReveal } from "@/components/MotionReveal";
 import { SmartLink } from "@/components/SmartLink";
 import { SectionHeading } from "@/components/SectionHeading";
-import { futureFilms, otherVideoProjects, primaryFilm } from "@/content/films";
+import { filmDirection, otherVideoProjects, primaryFilm } from "@/content/films";
 
 export const metadata: Metadata = {
   title: "Film",
@@ -52,8 +51,16 @@ export default function FilmPage() {
         </MotionReveal>
       </section>
 
-      <section className="content-band">
-        <EditorialQuote lines={primaryFilm.directorNote} attribution="Director's note" />
+      <section className="content-band note-band">
+        <MotionReveal>
+          <p className="eyebrow">Director&apos;s note</p>
+          <h2>Witness changes the room.</h2>
+        </MotionReveal>
+        <MotionReveal className="prose-column">
+          {primaryFilm.directorNote.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </MotionReveal>
       </section>
 
       <section className="content-band credits-section">
@@ -89,11 +96,6 @@ export default function FilmPage() {
             <p key={paragraph}>{paragraph}</p>
           ))}
         </MotionReveal>
-      </section>
-
-      <section className="content-band">
-        <SectionHeading eyebrow="Stills" title="Frames from the film" />
-        <FilmStills stills={primaryFilm.stills} />
       </section>
 
       <section className="content-band video-projects-section">
@@ -132,7 +134,7 @@ export default function FilmPage() {
         </MotionReveal>
         <MotionReveal>
           <p className="eyebrow">Continuing direction</p>
-          {futureFilms.map((line) => (
+          {filmDirection.map((line) => (
             <p key={line}>{line}</p>
           ))}
         </MotionReveal>

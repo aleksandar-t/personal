@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { FullBleedImage } from "@/components/FullBleedImage";
 import { MotionReveal } from "@/components/MotionReveal";
 import { SmartLink } from "@/components/SmartLink";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -35,10 +34,7 @@ export default function PhotographyPage() {
         </div>
       </section>
 
-      <section className="content-band split-feature">
-        <MotionReveal>
-          <FullBleedImage image={featured.hero} priority />
-        </MotionReveal>
+      <section className="content-band featured-text-band">
         <MotionReveal className="feature-copy">
           <p className="eyebrow">Featured collection</p>
           <h2>{featured.title}</h2>
@@ -75,8 +71,8 @@ export default function PhotographyPage() {
       <section className="content-band recognition-section">
         <SectionHeading
           eyebrow="Recognition"
-          title="Context without turning the page into an awards resume."
-          intro="The work stays central; the distinctions sit quietly around it."
+          title="Selected recognition."
+          intro="The work stays central. The distinctions stay compact."
         />
         <ul className="recognition-list">
           {photographyRecognition.map((item) => (

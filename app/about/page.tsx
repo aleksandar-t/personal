@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { EditorialQuote } from "@/components/EditorialQuote";
 import { MotionReveal } from "@/components/MotionReveal";
 import { SectionHeading } from "@/components/SectionHeading";
-import { aboutCopy, signatureQuote, siteIdentity } from "@/content/site";
+import { aboutCopy, signatureQuote } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "About",
@@ -35,7 +35,7 @@ export default function AboutPage() {
       <section className="page-hero content-band about-hero">
         <div>
           <p className="eyebrow">About</p>
-          <h1>{siteIdentity.alternate}</h1>
+          <h1>One way of seeing.</h1>
         </div>
         <div className="prose-column">
           {aboutCopy.map((paragraph) => (
@@ -49,7 +49,7 @@ export default function AboutPage() {
           eyebrow="One identity"
           title="Observing carefully, removing noise, recognizing structure."
         />
-        <div className="identity-grid">
+        <div className="identity-list">
           {identityThreads.map((thread) => (
             <MotionReveal className="identity-thread" key={thread.title}>
               <h3>{thread.title}</h3>
