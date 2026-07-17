@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { EditorialQuote } from "@/components/EditorialQuote";
 import { MotionReveal } from "@/components/MotionReveal";
-import { NewTabLink } from "@/components/NewTabLink";
+import { SmartLink } from "@/components/SmartLink";
 import { ProjectFeature } from "@/components/ProjectFeature";
 import { SectionHeading } from "@/components/SectionHeading";
 import {
@@ -40,8 +40,8 @@ export default function Home() {
             noise, reveal the relationship.
           </p>
           <div className="hero-actions">
-            <NewTabLink href="#worlds">Explore the work</NewTabLink>
-            <NewTabLink href="/contact">Enter the conversation</NewTabLink>
+            <SmartLink href="#worlds">Explore the work</SmartLink>
+            <SmartLink href="/contact">Enter the conversation</SmartLink>
           </div>
         </div>
       </section>
@@ -83,9 +83,9 @@ export default function Home() {
           <p className="closing-line">
             The work changes medium. The relationship remains.
           </p>
-          <NewTabLink className="text-link" href="/contact">
+          <SmartLink className="text-link" href="/contact">
             Start a conversation
-          </NewTabLink>
+          </SmartLink>
         </MotionReveal>
       </section>
     </>

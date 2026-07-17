@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { FullBleedImage } from "@/components/FullBleedImage";
 import { MotionReveal } from "@/components/MotionReveal";
-import { NewTabLink } from "@/components/NewTabLink";
+import { SmartLink } from "@/components/SmartLink";
 import { SectionHeading } from "@/components/SectionHeading";
 import { photographyRecognition } from "@/content/awards";
 import { photoCollections, photographyIntro } from "@/content/photography";
@@ -27,9 +27,9 @@ export default function PhotographyPage() {
           <p>{photographyIntro.description}</p>
           <div className="resource-links">
             {photographyIntro.links.map((link) => (
-              <NewTabLink key={link.label} href={link.href}>
+              <SmartLink key={link.label} href={link.href}>
                 {link.label}
-              </NewTabLink>
+              </SmartLink>
             ))}
           </div>
         </div>
@@ -44,9 +44,9 @@ export default function PhotographyPage() {
           <h2>{featured.title}</h2>
           <p>{featured.subtitle}</p>
           <p>{featured.intro[0]}</p>
-          <NewTabLink className="text-link" href={`/photography/${featured.slug}`}>
+          <SmartLink className="text-link" href={`/photography/${featured.slug}`}>
             View the collection
-          </NewTabLink>
+          </SmartLink>
         </MotionReveal>
       </section>
 
@@ -64,9 +64,9 @@ export default function PhotographyPage() {
                 <h3>{collection.title}</h3>
                 <p>{collection.subtitle}</p>
               </div>
-              <NewTabLink className="text-link" href={`/photography/${collection.slug}`}>
+              <SmartLink className="text-link" href={`/photography/${collection.slug}`}>
                 Open collection
-              </NewTabLink>
+              </SmartLink>
             </MotionReveal>
           ))}
         </div>

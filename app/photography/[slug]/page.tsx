@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { FullBleedImage } from "@/components/FullBleedImage";
-import { NewTabLink } from "@/components/NewTabLink";
+import { SmartLink } from "@/components/SmartLink";
 import { PhotographyGallery } from "@/components/PhotographyGallery";
 import { getPhotoCollection, photoCollections } from "@/content/photography";
 
@@ -73,13 +73,13 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
       </section>
 
       <nav className="collection-nav" aria-label="Collection navigation">
-        <NewTabLink href={`/photography/${previous.slug}`}>
+        <SmartLink href={`/photography/${previous.slug}`}>
           Previous: {previous.title}
-        </NewTabLink>
-        <NewTabLink href="/photography">All photography</NewTabLink>
-        <NewTabLink href={`/photography/${next.slug}`}>
+        </SmartLink>
+        <SmartLink href="/photography">All photography</SmartLink>
+        <SmartLink href={`/photography/${next.slug}`}>
           Next: {next.title}
-        </NewTabLink>
+        </SmartLink>
       </nav>
     </>
   );

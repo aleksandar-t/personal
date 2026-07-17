@@ -3,7 +3,7 @@ import { EditorialQuote } from "@/components/EditorialQuote";
 import { FilmStills } from "@/components/FilmStills";
 import { FullBleedImage } from "@/components/FullBleedImage";
 import { MotionReveal } from "@/components/MotionReveal";
-import { NewTabLink } from "@/components/NewTabLink";
+import { SmartLink } from "@/components/SmartLink";
 import { SectionHeading } from "@/components/SectionHeading";
 import { futureFilms, otherVideoProjects, primaryFilm } from "@/content/films";
 
@@ -43,10 +43,10 @@ export default function FilmPage() {
           ))}
           <div className="film-links" aria-label="Film links">
             {primaryFilm.links.map((link) => (
-              <NewTabLink key={link.href} href={link.href}>
+              <SmartLink key={link.href} href={link.href}>
                 <span>{link.label}</span>
                 <small>{link.note}</small>
-              </NewTabLink>
+              </SmartLink>
             ))}
           </div>
         </MotionReveal>
@@ -116,9 +116,9 @@ export default function FilmPage() {
               <h3>{project.title}</h3>
               <p className="video-project-card__role">{project.role}</p>
               <p>{project.description}</p>
-              <NewTabLink className="text-link" href={project.href}>
+              <SmartLink className="text-link" href={project.href}>
                 Watch project
-              </NewTabLink>
+              </SmartLink>
             </MotionReveal>
           ))}
         </div>

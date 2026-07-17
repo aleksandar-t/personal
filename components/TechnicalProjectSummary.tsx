@@ -1,5 +1,5 @@
 import type { TechnicalProject } from "@/content/types";
-import { NewTabLink } from "./NewTabLink";
+import { SmartLink } from "./SmartLink";
 
 type TechnicalProjectSummaryProps = {
   project: TechnicalProject;
@@ -47,9 +47,9 @@ export function TechnicalProjectSummary({
 
       <div className="project-links">
         {project.links.map((link) => (
-          <NewTabLink key={link.label} href={link.href}>
+          <SmartLink key={link.label} href={link.href}>
             {link.label}
-          </NewTabLink>
+          </SmartLink>
         ))}
       </div>
     </article>

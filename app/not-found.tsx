@@ -1,4 +1,4 @@
-import { NewTabLink } from "@/components/NewTabLink";
+import { SmartLink } from "@/components/SmartLink";
 
 export default function NotFound() {
   return (
@@ -9,9 +9,9 @@ export default function NotFound() {
         The site is built as a personal universe, but this path has not been
         given a door.
       </p>
-      <NewTabLink className="text-link" href="/">
+      <SmartLink className="text-link" href="/">
         Return home
-      </NewTabLink>
+      </SmartLink>
     </section>
   );
 }

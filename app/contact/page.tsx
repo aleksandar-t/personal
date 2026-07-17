@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 import { MotionReveal } from "@/components/MotionReveal";
-import { NewTabLink } from "@/components/NewTabLink";
+import { SmartLink } from "@/components/SmartLink";
 import { SectionHeading } from "@/components/SectionHeading";
 import { socialLinks } from "@/content/social";
 
@@ -34,7 +34,7 @@ export default function ContactPage() {
           <ul className="contact-links">
             {socialLinks.map((link) => (
               <li key={link.label}>
-                <NewTabLink href={link.href}>{link.label}</NewTabLink>
+                <SmartLink href={link.href}>{link.label}</SmartLink>
                 <span>{link.note}</span>
               </li>
             ))}

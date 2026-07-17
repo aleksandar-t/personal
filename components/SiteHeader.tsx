@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { navigation, siteIdentity } from "@/content/site";
-import { NewTabLink } from "./NewTabLink";
+import { SmartLink } from "./SmartLink";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -15,9 +15,9 @@ export function SiteHeader() {
         Skip to content
       </a>
       <div className="site-header__inner">
-        <NewTabLink className="site-mark" href="/" aria-label="Aleksandar Tomovski home">
+        <SmartLink className="site-mark" href="/" aria-label="Aleksandar Tomovski home">
           <span>{siteIdentity.name}</span>
-        </NewTabLink>
+        </SmartLink>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navigation.map((item) => {
@@ -27,14 +27,14 @@ export function SiteHeader() {
                 : pathname.startsWith(item.href);
 
             return (
-              <NewTabLink
+              <SmartLink
                 key={item.href}
                 className="nav-link"
                 data-active={active}
                 href={item.href}
               >
                 {item.label}
-              </NewTabLink>
+              </SmartLink>
             );
           })}
         </nav>
@@ -59,13 +59,13 @@ export function SiteHeader() {
         aria-label="Mobile navigation"
       >
         {navigation.map((item) => (
-          <NewTabLink
+          <SmartLink
             key={item.href}
             href={item.href}
             onClick={() => setOpen(false)}
           >
             {item.label}
-          </NewTabLink>
+          </SmartLink>
         ))}
       </nav>
     </header>
