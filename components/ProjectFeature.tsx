@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import type { HomeWorld } from "@/content/types";
 import { MotionReveal } from "./MotionReveal";
+import { NewTabLink } from "./NewTabLink";
 
 type ProjectFeatureProps = {
   world: HomeWorld;
@@ -28,9 +28,9 @@ export function ProjectFeature({ world, index }: ProjectFeatureProps) {
         <h3>{world.title}</h3>
         <p>{world.description}</p>
         <p className="feature-note">{world.featured}</p>
-        <Link className="text-link" href={world.href}>
+        <NewTabLink className="text-link" href={world.href}>
           Enter {world.title.toLowerCase()}
-        </Link>
+        </NewTabLink>
       </div>
     </MotionReveal>
   );

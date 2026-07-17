@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { BookExcerpt } from "@/components/BookExcerpt";
 import { EditorialQuote } from "@/components/EditorialQuote";
 import { FullBleedImage } from "@/components/FullBleedImage";
 import { MotionReveal } from "@/components/MotionReveal";
+import { NewTabLink } from "@/components/NewTabLink";
 import { SectionHeading } from "@/components/SectionHeading";
 import { book } from "@/content/writing";
 
@@ -73,9 +73,9 @@ export default function WritingPage() {
         <EditorialQuote lines={["Nothing meaningful can be forced."]} />
         <div className="resource-links">
           {book.links.map((link) => (
-            <Link key={link.label} href={link.href}>
+            <NewTabLink key={link.label} href={link.href}>
               {link.label}
-            </Link>
+            </NewTabLink>
           ))}
         </div>
       </section>

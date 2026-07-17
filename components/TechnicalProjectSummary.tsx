@@ -1,5 +1,5 @@
-import Link from "next/link";
 import type { TechnicalProject } from "@/content/types";
+import { NewTabLink } from "./NewTabLink";
 
 type TechnicalProjectSummaryProps = {
   project: TechnicalProject;
@@ -47,9 +47,9 @@ export function TechnicalProjectSummary({
 
       <div className="project-links">
         {project.links.map((link) => (
-          <Link key={link.label} href={link.href}>
+          <NewTabLink key={link.label} href={link.href}>
             {link.label}
-          </Link>
+          </NewTabLink>
         ))}
       </div>
     </article>

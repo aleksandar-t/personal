@@ -288,15 +288,18 @@ h3 {
   margin: 22px 0 0;
   color: var(--foreground);
   font-family: var(--font-serif-stack);
-  font-size: 2rem;
+  font-size: clamp(1.9rem, 3vw, 2.45rem);
   line-height: 1.18;
+  white-space: nowrap;
 }
 
 .hero-support {
-  max-width: 660px;
+  max-width: 940px;
   margin: 28px 0 0;
   color: var(--soft);
   font-size: 1.1rem;
+  line-height: 1.5;
+  text-wrap: normal;
 }
 
 .hero-actions {
@@ -333,7 +336,7 @@ h3 {
 }
 
 .section-heading {
-  max-width: 720px;
+  max-width: 980px;
   margin-bottom: 38px;
 }
 
@@ -345,8 +348,10 @@ h3 {
 
 .section-heading p:last-child {
   margin-top: 18px;
-  max-width: var(--measure);
+  max-width: 94ch;
   font-size: 1.02rem;
+  line-height: 1.6;
+  text-wrap: normal;
 }
 
 .manifesto-grid,
@@ -469,7 +474,7 @@ h3 {
 }
 
 .editorial-quote {
-  width: min(100%, 940px);
+  width: min(100% - 32px, 1500px);
   margin: 0 auto;
 }
 
@@ -496,11 +501,19 @@ h3 {
 
 .closing-line {
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 1180px;
   color: var(--foreground);
   font-family: var(--font-serif-stack);
-  font-size: 2.6rem;
+  font-size: clamp(1.85rem, 3.1vw, 2.6rem);
   line-height: 1.18;
+  text-wrap: normal;
+}
+
+@media (min-width: 981px) {
+  .hero-support,
+  .closing-line {
+    white-space: nowrap;
+  }
 }
 
 .page-hero {
@@ -1245,10 +1258,12 @@ h3 {
 
   .role-stack {
     font-size: 1.5rem;
+    white-space: normal;
   }
 
   .hero-support {
     font-size: 1rem;
+    white-space: normal;
   }
 
   .manifesto-copy {

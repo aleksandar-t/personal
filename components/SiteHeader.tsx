@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { navigation, siteIdentity } from "@/content/site";
+import { NewTabLink } from "./NewTabLink";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -15,9 +15,9 @@ export function SiteHeader() {
         Skip to content
       </a>
       <div className="site-header__inner">
-        <Link className="site-mark" href="/" aria-label="Aleksandar Tomovski home">
+        <NewTabLink className="site-mark" href="/" aria-label="Aleksandar Tomovski home">
           <span>{siteIdentity.name}</span>
-        </Link>
+        </NewTabLink>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navigation.map((item) => {
@@ -27,14 +27,14 @@ export function SiteHeader() {
                 : pathname.startsWith(item.href);
 
             return (
-              <Link
+              <NewTabLink
                 key={item.href}
                 className="nav-link"
                 data-active={active}
                 href={item.href}
               >
                 {item.label}
-              </Link>
+              </NewTabLink>
             );
           })}
         </nav>
@@ -59,13 +59,13 @@ export function SiteHeader() {
         aria-label="Mobile navigation"
       >
         {navigation.map((item) => (
-          <Link
+          <NewTabLink
             key={item.href}
             href={item.href}
             onClick={() => setOpen(false)}
           >
             {item.label}
-          </Link>
+          </NewTabLink>
         ))}
       </nav>
     </header>

@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { siteIdentity } from "@/content/site";
 import { socialLinks } from "@/content/social";
+import { NewTabLink } from "./NewTabLink";
 
 export function Footer() {
   return (
@@ -18,9 +18,9 @@ export function Footer() {
       </div>
       <div className="site-footer__links" aria-label="Footer links">
         {socialLinks.slice(0, 5).map((link) => (
-          <Link key={link.label} href={link.href}>
+          <NewTabLink key={link.label} href={link.href}>
             {link.label}
-          </Link>
+          </NewTabLink>
         ))}
       </div>
       <p className="footer-closing">{siteIdentity.closing}</p>

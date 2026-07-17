@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { EditorialQuote } from "@/components/EditorialQuote";
 import { FilmStills } from "@/components/FilmStills";
 import { FullBleedImage } from "@/components/FullBleedImage";
 import { MotionReveal } from "@/components/MotionReveal";
+import { NewTabLink } from "@/components/NewTabLink";
 import { SectionHeading } from "@/components/SectionHeading";
 import { futureFilms, otherVideoProjects, primaryFilm } from "@/content/films";
 
@@ -43,10 +43,10 @@ export default function FilmPage() {
           ))}
           <div className="film-links" aria-label="Film links">
             {primaryFilm.links.map((link) => (
-              <Link key={link.href} href={link.href}>
+              <NewTabLink key={link.href} href={link.href}>
                 <span>{link.label}</span>
                 <small>{link.note}</small>
-              </Link>
+              </NewTabLink>
             ))}
           </div>
         </MotionReveal>
@@ -116,9 +116,9 @@ export default function FilmPage() {
               <h3>{project.title}</h3>
               <p className="video-project-card__role">{project.role}</p>
               <p>{project.description}</p>
-              <Link className="text-link" href={project.href}>
+              <NewTabLink className="text-link" href={project.href}>
                 Watch project
-              </Link>
+              </NewTabLink>
             </MotionReveal>
           ))}
         </div>

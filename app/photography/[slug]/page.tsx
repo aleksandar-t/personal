@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FullBleedImage } from "@/components/FullBleedImage";
+import { NewTabLink } from "@/components/NewTabLink";
 import { PhotographyGallery } from "@/components/PhotographyGallery";
 import { getPhotoCollection, photoCollections } from "@/content/photography";
 
@@ -73,9 +73,13 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
       </section>
 
       <nav className="collection-nav" aria-label="Collection navigation">
-        <Link href={`/photography/${previous.slug}`}>Previous: {previous.title}</Link>
-        <Link href="/photography">All photography</Link>
-        <Link href={`/photography/${next.slug}`}>Next: {next.title}</Link>
+        <NewTabLink href={`/photography/${previous.slug}`}>
+          Previous: {previous.title}
+        </NewTabLink>
+        <NewTabLink href="/photography">All photography</NewTabLink>
+        <NewTabLink href={`/photography/${next.slug}`}>
+          Next: {next.title}
+        </NewTabLink>
       </nav>
     </>
   );

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { FullBleedImage } from "@/components/FullBleedImage";
 import { MotionReveal } from "@/components/MotionReveal";
+import { NewTabLink } from "@/components/NewTabLink";
 import { SectionHeading } from "@/components/SectionHeading";
 import { assetPath } from "@/content/assets";
 import { engineeringPrinciples, engineeringProfile } from "@/content/engineering";
@@ -73,7 +73,9 @@ export default function EngineeringPage() {
             gets difficult work across the line.
           </p>
           <div className="resource-links">
-            <Link href={engineeringProfile.profileUrl}>View LinkedIn profile</Link>
+            <NewTabLink href={engineeringProfile.profileUrl}>
+              View LinkedIn profile
+            </NewTabLink>
           </div>
         </MotionReveal>
       </section>

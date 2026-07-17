@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { EditorialQuote } from "@/components/EditorialQuote";
 import { MotionReveal } from "@/components/MotionReveal";
+import { NewTabLink } from "@/components/NewTabLink";
 import { ProjectFeature } from "@/components/ProjectFeature";
 import { SectionHeading } from "@/components/SectionHeading";
 import {
@@ -34,22 +34,14 @@ export default function Home() {
         <div className="home-hero__content">
           <p className="eyebrow">One way of seeing</p>
           <h1>{siteIdentity.name}</h1>
-          <p className="role-stack">
-            Software Engineer.
-            <br />
-            Photographer.
-            <br />
-            Filmmaker.
-            <br />
-            Writer.
-          </p>
+          <p className="role-stack">{siteIdentity.roleLine}</p>
           <p className="hero-support">
-            Different mediums. The same instinct: look beneath the obvious,
-            remove noise, and let the relationship reveal itself.
+            Different mediums. Same instinct: look beneath the obvious, remove
+            noise, reveal the relationship.
           </p>
           <div className="hero-actions">
-            <Link href="#worlds">Explore the work</Link>
-            <Link href="/contact">Enter the conversation</Link>
+            <NewTabLink href="#worlds">Explore the work</NewTabLink>
+            <NewTabLink href="/contact">Enter the conversation</NewTabLink>
           </div>
         </div>
       </section>
@@ -91,9 +83,9 @@ export default function Home() {
           <p className="closing-line">
             The work changes medium. The relationship remains.
           </p>
-          <Link className="text-link" href="/contact">
+          <NewTabLink className="text-link" href="/contact">
             Start a conversation
-          </Link>
+          </NewTabLink>
         </MotionReveal>
       </section>
     </>
