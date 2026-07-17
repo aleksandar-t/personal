@@ -11,11 +11,11 @@ export const siteIdentity = {
   principle: "Never sacrifice curiosity for cleverness.",
   closing: "Until the next state.",
   heroImage: {
-    src: assetPath("/images/profile/aleksandar-hero-placeholder.png"),
-    alt: "Replaceable hero image placeholder for one of Aleksandar Tomovski's strongest photographs.",
+    src: assetPath("/images/profile/aleksandar-hero.png"),
+    alt: "Atmospheric visual introducing Aleksandar Tomovski's personal universe.",
     width: 1800,
     height: 1200,
-    caption: "Replace this with a strong personal photograph.",
+    caption: "A personal universe built from code, light, movement, and language.",
   } satisfies VisualAsset,
 };
 
@@ -51,11 +51,11 @@ export const homeWorlds: HomeWorld[] = [
     eyebrow: "Light and removal",
     href: "/photography",
     description:
-      "Photography that began in nature and mountain heights, moved through city streets, and now often returns to women, ballet, theatre, costume, light, and the intimacy before performance.",
+      "Photography that began in nature and mountain heights, moved through city streets, and found its strongest pulse around ballet, theatre, body, costume, shadow, and the charged intimacy before performance.",
     featured: "Featured collection: Behind the Curtains",
     image: {
       src: assetPath("/images/photography/behind-the-curtains/hero.png"),
-      alt: "Replaceable placeholder for the Behind the Curtains photography collection.",
+      alt: "Visual atmosphere for the Behind the Curtains photography collection.",
       width: 1600,
       height: 1100,
     },
@@ -66,11 +66,11 @@ export const homeWorlds: HomeWorld[] = [
     eyebrow: "Movement and absence",
     href: "/film",
     description:
-      "The Paradox and related video work use dance, theatre, rehearsal, and empty rooms to ask what changes when art is made without a witness.",
+      "The Paradox and related video work use dance, theatre, rehearsal rooms, and the missing audience to ask what changes when art is made without a witness.",
     featured: "Featured film: The Paradox",
     image: {
       src: assetPath("/images/film/the-paradox/hero.png"),
-      alt: "Replaceable cinematic placeholder for The Paradox.",
+      alt: "Cinematic visual atmosphere for The Paradox.",
       width: 1600,
       height: 900,
     },
@@ -81,11 +81,11 @@ export const homeWorlds: HomeWorld[] = [
     eyebrow: "Language and questions",
     href: "/writing",
     description:
-      "One Honest Conversation begins with a photon and becomes a philosophical dialogue about consciousness, AI, art, relationships, perception, and experience.",
+      "One Honest Conversation begins with a photon and opens into a philosophical dialogue about consciousness, AI, art, relationships, perception, and experience.",
     featured: "Featured book: One Honest Conversation",
     image: {
       src: assetPath("/images/book/one-honest-conversation.png"),
-      alt: "Replaceable book image placeholder for One Honest Conversation.",
+      alt: "Book artwork for One Honest Conversation.",
       width: 1400,
       height: 1000,
     },
@@ -96,11 +96,11 @@ export const homeWorlds: HomeWorld[] = [
     eyebrow: "Structure and change",
     href: "/engineering",
     description:
-      "Public professional work in software architecture, technical leadership, mentoring, and systems that have to become clearer under pressure.",
+      "Public professional work in software architecture, senior .NET engineering, technical leadership, mentoring, and systems that have to become clearer under pressure.",
     featured: "Public profile: LinkedIn",
     image: {
-      src: assetPath("/images/engineering/systems-placeholder.png"),
-      alt: "Replaceable engineering visual placeholder for systems architecture.",
+      src: assetPath("/images/engineering/systems-architecture.png"),
+      alt: "Abstract systems visual representing software architecture and product thinking.",
       width: 1600,
       height: 1000,
     },
@@ -109,6 +109,6 @@ export const homeWorlds: HomeWorld[] = [
 
 export const aboutCopy = [
   "I am Aleksandar Tomovski: born in Skopje, a software engineer by profession, and a photographer, filmmaker, and writer in the remaining hours where the same questions refuse to clock out.",
-  "The public biography looks like several lives placed side by side. From inside it, the pattern is simpler: observe carefully, remove noise, recognize structure, and make enough room for an honest relationship to appear.",
+  "From the outside, the public biography can look like several lives placed side by side: production software, international photography salons, theatre and dance films, and a book-length dialogue about curiosity and experience. From inside it, the pattern is simpler: observe carefully, remove noise, recognize structure, and leave enough room for an honest relationship to appear.",
   "In engineering, that relationship is between people, systems, pressure, and change. In photography, it is between body, light, shadow, vulnerability, and the person allowed to remain human inside the frame. In film, it is between performance and witness. In writing, it is between curiosity and the answer that has not earned the right to arrive yet.",
 ];

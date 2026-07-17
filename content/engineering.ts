@@ -4,7 +4,7 @@ export const engineeringProfile = {
   title: "Engineering",
   subtitle: "Systems that can be understood, owned, and changed.",
   summary:
-    "Aleksandar's public engineering story is anchored in senior software engineering, architecture, technical leadership, mentoring, and more than 15 years of building and owning production systems. Public recommendations around his work point to a consistent pattern: dedication, depth of knowledge, deadline-aware delivery, analytical thinking, and the ability to lead people through difficult work.",
+    "Aleksandar's public engineering story is anchored in senior software engineering, architecture, technical leadership, mentoring, and more than 15 years of building and owning production systems. The public signal is not a catalogue of side projects; it is a reputation for depth of knowledge, deadline-aware delivery, analytical thinking, professionalism, and the ability to help people move through difficult technical work.",
   profileUrl: "https://www.linkedin.com/in/aleksandartomovski/",
   practices: [
     "Senior and principal .NET engineering",
@@ -26,7 +26,7 @@ export const engineeringProfile = {
     "Incremental modernization over unnecessary rewrites",
   ],
   publicNote:
-    "For now, this page stays at professional altitude: public LinkedIn material, technical judgment, leadership, mentoring, and delivery. Personal products and experiments stay private until they are ready to stand in daylight.",
+    "This page is deliberately scoped to the public professional profile: engineering judgment, leadership, mentoring, delivery, and production ownership. Personal products and experiments stay offstage until they are ready to be introduced on their own terms.",
 };
 
 export const engineeringPrinciples = [
@@ -40,7 +40,7 @@ export const engineeringPrinciples = [
   },
   {
     title: "Product understanding",
-    text: "The system has to serve the real user journey, not only the diagram that looks elegant in isolation.",
+    text: "The system has to serve the real product journey, not only the diagram that looks elegant in isolation.",
   },
   {
     title: "Leadership",

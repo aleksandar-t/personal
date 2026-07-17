@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 
 const engineeringImage = {
-  src: assetPath("/images/engineering/systems-placeholder.png"),
-  alt: "Replaceable engineering visual placeholder for system structure and product thinking.",
+  src: assetPath("/images/engineering/systems-architecture.png"),
+  alt: "Abstract systems visual for software architecture, pressure, and product change.",
   width: 1600,
   height: 1000,
 };
@@ -35,7 +35,7 @@ export default function EngineeringPage() {
         <SectionHeading
           eyebrow="How Aleksandar thinks"
           title="The work is technical, but the judgment is human."
-          intro="This page keeps the private projects private and organizes the public engineering story around decisions, ownership, and trust."
+          intro="The public engineering story is organized around decisions, ownership, delivery, and trust — not a premature product catalogue."
         />
         <div className="principle-grid">
           {engineeringPrinciples.map((principle) => (
@@ -62,15 +62,16 @@ export default function EngineeringPage() {
       <section className="content-band two-column-band">
         <MotionReveal>
           <p className="eyebrow">Professional profile</p>
-          <h2>Public engineering story first. Personal products later.</h2>
+          <h2>A public profile built on calm ownership under pressure.</h2>
         </MotionReveal>
         <MotionReveal className="prose-column">
           <p>{engineeringProfile.publicNote}</p>
           <p>
-            The strongest public signal right now is the professional profile:
-            senior .NET work, architecture, technical leadership, mentoring,
-            delivery, production ownership, and the reputation of someone who
-            gets difficult work across the line.
+            The strongest public signal is the professional pattern: senior .NET
+            work, architecture, technical leadership, mentoring, production
+            ownership, and recommendations that point to dedication, analytical
+            depth, deadline awareness, and the ability to get difficult work
+            across the line.
           </p>
           <div className="resource-links">
             <SmartLink href={engineeringProfile.profileUrl}>

@@ -59,7 +59,7 @@ Most copy and data lives in:
 - `content/writing.ts`: book synopsis, parts, selected lines, links
 - `content/engineering.ts`: engineering profile, principles, products
 - `content/awards.ts`: photography recognition
-- `content/social.ts`: contact and social placeholders
+- `content/social.ts`: public profile and project links
 
 Update those files first when changing the site content. The React components
 should mostly stay focused on layout and interaction.
@@ -72,8 +72,9 @@ platforms receive an absolute image URL.
 
 ## Replace Images
 
-All current images are labeled placeholders. Replace them with final assets at
-the same paths or update the matching content module.
+Current images are visual stand-ins for the final personal photography, film
+stills, book artwork, and engineering visuals. Replace them at the same paths or
+update the matching content module when final assets are ready.
 
 Expected folders:
 
@@ -89,11 +90,10 @@ Expected folders:
 Use real photographs, film stills, book artwork, or product visuals. Avoid stock
 imagery, fake logos, invented testimonials, and fake achievements.
 
-## Contact Form
+## Contact
 
-The contact form is front-end only. It prevents submission and shows a clear
-placeholder status. Connect `components/ContactForm.tsx` to a real form provider
-or API endpoint when the contact channel is ready.
+The contact page currently uses public profile and project links only. Add a
+direct email or form only when there is a real public contact channel behind it.
 
 ## Notes
 
@@ -101,5 +101,3 @@ or API endpoint when the contact channel is ready.
   and Framer Motion for restrained reveal animation.
 - Motion respects `prefers-reduced-motion`.
 - Photography collection pages include a keyboard-friendly lightbox.
-- Placeholder links are intentionally marked and should be replaced before a
-  public launch.

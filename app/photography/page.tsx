@@ -54,7 +54,7 @@ export default function PhotographyPage() {
         <SectionHeading
           eyebrow="Collections"
           title="Bodies of work"
-          intro="These sections are ready for the real photographs and final curatorial text; for now the story carries the shape of the work."
+          intro="The sections are organized around the real shape of the practice: backstage intimacy, exposed relation, theatre absence, and selected images joined by attention rather than category."
         />
         <div className="collection-list">
           {photoCollections.map((collection) => (

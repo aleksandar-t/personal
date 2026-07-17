@@ -42,7 +42,7 @@ export const book = {
     "The mountain is shared. The relationship isn't.",
   ],
   behindTheBook:
-    "The public book is not presented as a manifesto of answers. It is a record of two forms of thought staying with a question long enough for the question to become more honest.",
+    "The book is not presented as a manifesto of answers. It is a record of two forms of thought staying with a question long enough for the question to become more honest.",
   authorNote:
     "The book is not trying to win an argument. It is trying to remain honest inside a question long enough for the question to become more precise.",
   links: [
@@ -53,10 +53,6 @@ export const book = {
     {
       label: "Paperback on Amazon",
       href: "https://www.amazon.com/One-Honest-Conversation-Relationship-Experience/dp/B0H854WQY2/ref=tmm_pap_swatch_0",
-    },
-    {
-      label: "Amazon editions",
-      href: "https://www.amazon.com/One-Honest-Conversation-Relationship-Experience/dp/B0H854WQY2",
     },
   ],
 };

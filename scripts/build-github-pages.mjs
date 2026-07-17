@@ -8,6 +8,8 @@ const nextCli = resolve(projectRoot, "node_modules", "next", "dist", "bin", "nex
 const outDir = resolve(projectRoot, "out");
 const docsDir = resolve(projectRoot, "docs");
 
+await rm(outDir, { recursive: true, force: true });
+
 const child = spawn(process.execPath, [nextCli, "build"], {
   cwd: projectRoot,
   env: {

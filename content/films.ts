@@ -8,7 +8,7 @@ export const primaryFilm: FilmProject = {
     "A one-minute Black Swan performance in an empty theatre, shaped around the paradox of whether an artwork fully exists when no one is there to witness it.",
   hero: {
     src: assetPath("/images/film/the-paradox/hero.png"),
-    alt: "Replaceable cinematic hero placeholder for The Paradox.",
+    alt: "Cinematic theatre atmosphere for The Paradox.",
     width: 1600,
     height: 900,
   },
@@ -40,35 +40,36 @@ export const primaryFilm: FilmProject = {
     "It does not reduce absence to loneliness or spectacle. It asks a cleaner and more dangerous question: if a perfect minute happens in space and time and no observer receives it, where does it live?",
   ],
   directorNote: [
-    "The Paradox begins where stage art and quantum metaphor touch: the observer changes the room.",
+    "The Paradox begins where stage art and quantum metaphor touch: the observer changes the room, and absence changes it again.",
     "The camera records the performance, but the film keeps asking whether recording is the same as witnessing.",
     "That uncertainty is the point.",
   ],
   credits: [
     { role: "Director", name: "Aleksandar Tomovski" },
     { role: "Performer", name: "Marija Kichevska" },
-    { role: "Cinematography", name: "To be added", placeholder: true },
-    { role: "Music / Sound", name: "To be added", placeholder: true },
-    { role: "Additional credits", name: "To be added", placeholder: true },
+    { role: "Voice-over", name: "Andrew Cook" },
   ],
   stills: [
     {
       src: assetPath("/images/film/the-paradox/empty-theatre.png"),
-      alt: "Replaceable still placeholder showing an empty theatre.",
+      alt: "Empty theatre still from the world of The Paradox.",
       width: 1500,
       height: 900,
+      caption: "The room remains theatrical even when the audience is gone.",
     },
     {
       src: assetPath("/images/film/the-paradox/black-swan.png"),
-      alt: "Replaceable still placeholder for the Black Swan performance.",
+      alt: "Black Swan performance still from The Paradox.",
       width: 1100,
       height: 1400,
+      caption: "A one-minute performance carries the pressure of being unseen.",
     },
     {
       src: assetPath("/images/film/the-paradox/stage-shadow.png"),
-      alt: "Replaceable still placeholder for movement and shadow on stage.",
+      alt: "Stage shadow and movement still from The Paradox.",
       width: 1400,
       height: 950,
+      caption: "The monochrome stage turns movement into a question about witness.",
     },
   ],
   review: {
@@ -79,7 +80,7 @@ export const primaryFilm: FilmProject = {
       "sharp, simple and direct",
     summary: [
       "The review frames The Paradox through the familiar question of whether a falling tree makes a sound when no one is there to hear it, then connects that thought experiment to observation, perception, and quantum behavior.",
-      "It notes the monochrome palette, the empty theatre, the Black Swan performance, and the way the film turns a recording device into an insufficient substitute for a true observer.",
+      "Public review material notes the monochrome palette, the empty theatre, the Black Swan performance, Marija Kichevska's movement, and the way the film turns a recording device into an insufficient substitute for a true observer.",
       "The review also reads the film through the Covid-era reality of stage artists rehearsing and performing without live audiences.",
     ],
   },
@@ -89,7 +90,7 @@ export const primaryFilm: FilmProject = {
 
 export const futureFilms = [
   "These works move between film, documentary observation, dance, theatre, photography, and performance.",
-  "Future short films, experiments, studies, and cinematic notes can grow from the same place as photography and writing.",
+  "The continuing direction is not volume for its own sake, but a sharper language for rooms, bodies, rehearsal, witness, and absence.",
 ];
 
 export const otherVideoProjects: VideoProject[] = [
@@ -114,7 +115,7 @@ export const otherVideoProjects: VideoProject[] = [
       "A rehearsal document around Scheherazade by Nikolai Rimsky-Korsakov, performed by the orchestra of the Macedonian National Opera and Ballet.",
   },
   {
-    title: "AURORA — The Making Of Bolero Ballet",
+    title: "AURORA - The Making Of Bolero Ballet",
     slug: "aurora-making-of-bolero-ballet",
     year: "2020",
     format: "Documentary / behind the scenes",

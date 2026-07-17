@@ -40,6 +40,33 @@ test("server-renders Aleksandar's personal universe homepage", async () => {
   assert.match(html, /Different mediums/);
   assert.match(html, /The work changes medium/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|react-loading-skeleton/i);
+  assert.doesNotMatch(html, /placeholder|replaceable|to be added|replace-with-email/i);
+});
+
+test("keeps individual pages specific and free of public placeholder copy", async () => {
+  const paths = [
+    "/about",
+    "/contact",
+    "/engineering",
+    "/film",
+    "/photography",
+    "/photography/behind-the-curtains",
+    "/photography/naked-you-me",
+    "/photography/paradox",
+    "/photography/selected-works",
+    "/writing",
+  ];
+
+  for (const pathname of paths) {
+    const response = await render(pathname);
+    assert.equal(response.status, 200, pathname);
+    const html = await response.text();
+    assert.doesNotMatch(
+      html,
+      /placeholder|replaceable|to be added|replace-with-email|Test the placeholder form/i,
+      pathname,
+    );
+  }
 });
 
 test("keeps content editable and starter-only pieces removed", async () => {
@@ -76,14 +103,14 @@ test("keeps content editable and starter-only pieces removed", async () => {
   assert.doesNotMatch(packageJson, /react-loading-skeleton|drizzle-orm|drizzle-kit/);
   assert.match(readme, /NEXT_PUBLIC_SITE_URL/);
   assert.match(readme, /public\/images\/photography\/behind-the-curtains/);
-  assert.match(readme, /ContactForm\.tsx/);
+  assert.doesNotMatch(readme, /ContactForm\.tsx|placeholder links/i);
 
   await Promise.all([
-    access(new URL("../public/images/profile/aleksandar-hero-placeholder.png", import.meta.url)),
+    access(new URL("../public/images/profile/aleksandar-hero.png", import.meta.url)),
     access(new URL("../public/images/photography/behind-the-curtains/hero.png", import.meta.url)),
     access(new URL("../public/images/film/the-paradox/hero.png", import.meta.url)),
     access(new URL("../public/images/book/one-honest-conversation.png", import.meta.url)),
-    access(new URL("../public/images/engineering/systems-placeholder.png", import.meta.url)),
+    access(new URL("../public/images/engineering/systems-architecture.png", import.meta.url)),
     access(new URL("../public/og.png", import.meta.url)),
   ]);
 

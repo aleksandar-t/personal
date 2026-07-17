@@ -2,12 +2,6 @@ import type { SocialLink } from "./types";
 
 export const socialLinks: SocialLink[] = [
   {
-    label: "Email",
-    href: "mailto:replace-with-email@example.com",
-    note: "Replace with Aleksandar's preferred public email address.",
-    placeholder: true,
-  },
-  {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/aleksandartomovski/",
     note: "Professional software engineering profile.",

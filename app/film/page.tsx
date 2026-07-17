@@ -59,7 +59,7 @@ export default function FilmPage() {
       <section className="content-band credits-section">
         <SectionHeading
           eyebrow="Credits"
-          title="Known public credits and placeholders for the final package."
+          title="Known public credits."
         />
         <dl className="credits-list">
           {primaryFilm.credits.map((credit) => (
@@ -126,12 +126,12 @@ export default function FilmPage() {
 
       <section className="content-band two-column-band">
         <MotionReveal>
-          <p className="eyebrow">Festival / review area</p>
+          <p className="eyebrow">Public recognition</p>
           <h2>Public recognition, without drowning the film.</h2>
           <p>{primaryFilm.festivalStatus}</p>
         </MotionReveal>
         <MotionReveal>
-          <p className="eyebrow">Future films</p>
+          <p className="eyebrow">Continuing direction</p>
           {futureFilms.map((line) => (
             <p key={line}>{line}</p>
           ))}

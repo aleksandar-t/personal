@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ContactForm } from "@/components/ContactForm";
 import { MotionReveal } from "@/components/MotionReveal";
 import { SmartLink } from "@/components/SmartLink";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -20,8 +19,9 @@ export default function ContactPage() {
           <h1>Enter the conversation.</h1>
         </div>
         <p>
-          For engineering work, creative collaboration, photography, film,
-          writing, or thoughtful conversations that do not fit a tidy category.
+          Public doors into the work: engineering profile, photography archive,
+          film projects, and the book. A direct inbox can be added when the
+          public contact channel is ready.
         </p>
       </section>
 
@@ -41,8 +41,15 @@ export default function ContactPage() {
           </ul>
         </MotionReveal>
 
-        <MotionReveal>
-          <ContactForm />
+        <MotionReveal className="contact-note">
+          <p className="eyebrow">What belongs here</p>
+          <h2>Work, collaboration, and conversations with a real reason.</h2>
+          <p>
+            Engineering conversations can start through LinkedIn. Photography,
+            film, and writing inquiries can begin from the public project pages.
+            The point is not to collect messages; it is to make the right
+            conversation easier to begin.
+          </p>
         </MotionReveal>
       </section>
     </>

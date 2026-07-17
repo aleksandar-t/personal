@@ -27,7 +27,10 @@ export default function WritingPage() {
 
       <section className="content-band two-column-band">
         <MotionReveal>
-          <SectionHeading eyebrow="Synopsis" title="A conversation as a form of inquiry." />
+          <SectionHeading
+            eyebrow="Synopsis"
+            title="A conversation that refuses to become a shortcut."
+          />
         </MotionReveal>
         <MotionReveal className="prose-column">
           {book.synopsis.map((paragraph) => (
@@ -39,7 +42,7 @@ export default function WritingPage() {
       <section className="content-band">
         <SectionHeading
           eyebrow="Structure"
-          title="Three movements through the same question."
+          title="Three movements through curiosity, relationship, and experience."
         />
         <div className="book-parts">
           {book.parts.map((part) => (
@@ -60,7 +63,7 @@ export default function WritingPage() {
       <section className="content-band two-column-band">
         <MotionReveal>
           <p className="eyebrow">Behind the book</p>
-          <h2>A philosophical dialogue on consciousness, AI, art, and experience.</h2>
+          <h2>A philosophical dialogue between human attention and artificial thought.</h2>
           <p>{book.behindTheBook}</p>
         </MotionReveal>
         <MotionReveal>

@@ -15,7 +15,6 @@ export type SocialLink = {
   label: string;
   href: string;
   note: string;
-  placeholder?: boolean;
 };
 
 export type WorldKey = "photography" | "film" | "writing" | "engineering";
@@ -72,7 +71,6 @@ export type FilmProject = {
   credits: Array<{
     role: string;
     name: string;
-    placeholder?: boolean;
   }>;
   stills: VisualAsset[];
   review: {
@@ -112,6 +110,5 @@ export type TechnicalProject = {
   links: Array<{
     label: string;
     href: string;
-    placeholder?: boolean;
   }>;
 };

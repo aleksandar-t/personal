@@ -17,7 +17,7 @@ const identityThreads = [
   },
   {
     title: "Photography practice",
-    text: "A practice that began in nature and mountain heights, moved through city streets, and found a recurring stage in ballet, theatre, portraiture, and the quiet relation inside the frame.",
+    text: "A practice that began in nature and mountain heights, moved through city streets, and became internationally recognized through ballet, theatre, portraiture, exhibitions, salons, and the quiet relation inside the frame.",
   },
   {
     title: "Filmmaking",
@@ -68,8 +68,9 @@ export default function AboutPage() {
           <p>
             Mentoring, interviewing, code review, and engineering standards are
             not separate from creative work. They are forms of attention toward
-            people, decisions, and the conditions under which a team can become
-            less noisy, more honest, and more capable of owning the work together.
+            people, decisions, pressure, and the conditions under which a team
+            can become less noisy, more honest, and more capable of owning the
+            work together.
           </p>
         </MotionReveal>
       </section>
