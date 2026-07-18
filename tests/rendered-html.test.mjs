@@ -85,8 +85,17 @@ test("keeps individual pages specific and free of public placeholder copy", asyn
 });
 
 test("keeps content editable and starter-only pieces removed", async () => {
-  const [site, photography, films, writing, engineering, packageJson, readme] =
-    await Promise.all([
+  const [
+    site,
+    photography,
+    films,
+    writing,
+    engineering,
+    packageJson,
+    readme,
+    cname,
+    exportedHome,
+  ] = await Promise.all([
       readFile(new URL("../content/site.ts", import.meta.url), "utf8"),
       readFile(new URL("../content/photography.ts", import.meta.url), "utf8"),
       readFile(new URL("../content/films.ts", import.meta.url), "utf8"),
@@ -94,6 +103,8 @@ test("keeps content editable and starter-only pieces removed", async () => {
       readFile(new URL("../content/engineering.ts", import.meta.url), "utf8"),
       readFile(new URL("../package.json", import.meta.url), "utf8"),
       readFile(new URL("../README.md", import.meta.url), "utf8"),
+      readFile(new URL("../docs/CNAME", import.meta.url), "utf8"),
+      readFile(new URL("../docs/index.html", import.meta.url), "utf8"),
     ]);
 
   assert.match(site, /One way of seeing/);
@@ -120,6 +131,10 @@ test("keeps content editable and starter-only pieces removed", async () => {
   assert.match(readme, /NEXT_PUBLIC_SITE_URL/);
   assert.match(readme, /public\/images\/photography\/behind-the-curtains/);
   assert.doesNotMatch(readme, /ContactForm\.tsx|placeholder links/i);
+  assert.equal(cname.trim(), "aleksandartomovski.com");
+  assert.match(exportedHome, /https:\/\/aleksandartomovski\.com\/og\.png/);
+  assert.match(exportedHome, /href="\/photography\/"/);
+  assert.doesNotMatch(exportedHome, /\/personal\/|\/personal_/);
 
   await Promise.all([
     access(new URL("../public/images/profile/aleksandar-hero.png", import.meta.url)),

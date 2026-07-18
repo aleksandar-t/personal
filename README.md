@@ -28,7 +28,8 @@ npm run build:github
 ```
 
 That command writes the static export to `out/`, then copies the GitHub Pages
-ready site into `docs/`.
+ready site into `docs/`. By default it exports for the custom domain
+`https://aleksandartomovski.com` with no `/personal` base path.
 
 ## GitHub Pages
 
@@ -46,7 +47,15 @@ Next.js source code, not the generated static site.
 Expected Pages URL:
 
 ```text
-https://aleksandar-t.github.io/personal/
+https://aleksandartomovski.com/
+```
+
+The custom domain is tracked in `public/CNAME`, which is copied into
+`docs/CNAME` during the static export. If you ever need to temporarily build for
+the default repository URL again, run the export with:
+
+```bash
+NEXT_PUBLIC_BASE_PATH=/personal NEXT_PUBLIC_SITE_URL=https://aleksandar-t.github.io/personal npm run build:github
 ```
 
 ## Content

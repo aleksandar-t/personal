@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[22016,["/personal/_next/static/chunks/06utjkeg32sg8.js","/personal/_next/static/chunks/0d3shmwh5_nmn.js"],""]
-3:I[97367,["/personal/_next/static/chunks/06utjkeg32sg8.js","/personal/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+2:I[22016,["/_next/static/chunks/05l36.c_p.1rw.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+3:I[97367,["/_next/static/chunks/05l36.c_p.1rw.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","section",null,{"className":"not-found content-band","children":[["$","p",null,{"className":"eyebrow","children":"404"}],["$","h1",null,{"children":"This room is not in the house yet."}],["$","p",null,{"children":"The site is built as a personal universe, but this path has not been given a door."}],["$","$L2",null,{"className":"text-link","href":"/","children":"Return home"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"kwDg7DK6fge9gJyY6INdE"}
+0:{"rsc":["$","$1","c",{"children":[["$","section",null,{"className":"not-found content-band","children":[["$","p",null,{"className":"eyebrow","children":"404"}],["$","h1",null,{"children":"This room is not in the house yet."}],["$","p",null,{"children":"The site is built as a personal universe, but this path has not been given a door."}],["$","$L2",null,{"className":"text-link","href":"/","children":"Return home"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mtVzg47kkJDJyHUFnkA64"}
 5:null

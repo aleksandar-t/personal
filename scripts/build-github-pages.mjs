@@ -15,9 +15,9 @@ const child = spawn(process.execPath, [nextCli, "build"], {
   env: {
     ...process.env,
     GITHUB_PAGES: "true",
-    NEXT_PUBLIC_BASE_PATH: process.env.NEXT_PUBLIC_BASE_PATH ?? "/personal",
+    NEXT_PUBLIC_BASE_PATH: process.env.NEXT_PUBLIC_BASE_PATH ?? "",
     NEXT_PUBLIC_SITE_URL:
-      process.env.NEXT_PUBLIC_SITE_URL ?? "https://aleksandar-t.github.io/personal",
+      process.env.NEXT_PUBLIC_SITE_URL ?? "https://aleksandartomovski.com",
   },
   shell: false,
   stdio: "inherit",
