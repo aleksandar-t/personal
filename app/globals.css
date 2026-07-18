@@ -1231,11 +1231,19 @@ h3 {
 
 @media (max-width: 980px) {
   h1 {
-    font-size: 3.8rem;
+    font-size: 3.45rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.35rem;
+  }
+
+  .page-hero h1 {
+    font-size: 3.35rem;
+  }
+
+  .home-hero {
+    min-height: 82svh;
   }
 
   .manifesto-grid,
@@ -1249,6 +1257,7 @@ h3 {
   .world-feature:nth-child(even),
   .technical-project {
     grid-template-columns: 1fr;
+    gap: clamp(28px, 5vw, 42px);
   }
 
   .world-feature:nth-child(even) .world-feature__image {
@@ -1273,26 +1282,49 @@ h3 {
     margin-left: 0;
   }
 
+  .film-hero {
+    min-height: 78svh;
+  }
+
+  .film-hero__copy {
+    padding: 38vh 0 62px;
+  }
+
   .still-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 760px) {
+  body {
+    background-size: 34px 34px, 34px 34px, auto;
+  }
+
   .desktop-nav {
     display: none;
   }
 
+  .site-header__inner {
+    width: min(100% - 28px, var(--max-width));
+    min-height: 60px;
+  }
+
+  .site-mark {
+    font-size: 0.98rem;
+  }
+
   .menu-button {
     display: block;
+    width: 40px;
+    height: 40px;
   }
 
   .mobile-nav {
     display: grid;
-    gap: 4px;
+    gap: 0;
     max-height: 0;
     overflow: hidden;
-    width: min(100% - 32px, var(--max-width));
+    width: min(100% - 28px, var(--max-width));
     margin: 0 auto;
     transition: max-height 220ms ease;
   }
@@ -1305,65 +1337,159 @@ h3 {
   .mobile-nav a {
     border-bottom: 1px solid var(--line);
     color: var(--foreground);
-    padding: 14px 0;
+    padding: 12px 0;
   }
 
   .content-band {
-    padding: 72px 0;
+    width: min(100% - 28px, var(--max-width));
+    padding: 54px 0;
   }
 
   .home-hero {
-    min-height: 84svh;
+    min-height: 76svh;
+  }
+
+  .home-hero__scrim {
+    background:
+      linear-gradient(90deg, rgba(13, 12, 10, 0.95), rgba(13, 12, 10, 0.64)),
+      linear-gradient(180deg, rgba(13, 12, 10, 0.18), rgba(13, 12, 10, 0.88));
   }
 
   .home-hero__content {
-    padding-bottom: 54px;
+    width: min(100% - 28px, var(--max-width));
+    padding-bottom: 42px;
   }
 
   h1,
   .page-hero h1 {
-    font-size: 3rem;
+    font-size: clamp(2.45rem, 12vw, 3rem);
+    line-height: 1.04;
   }
 
   h2 {
-    font-size: 2.1rem;
+    font-size: clamp(1.8rem, 8vw, 2.1rem);
+    line-height: 1.06;
   }
 
   h3 {
-    font-size: 1.6rem;
+    font-size: 1.48rem;
+    line-height: 1.08;
+  }
+
+  p {
+    line-height: 1.58;
   }
 
   .role-stack {
-    font-size: 1.5rem;
+    margin-top: 16px;
+    font-size: clamp(1.32rem, 6.5vw, 1.6rem);
+    line-height: 1.15;
     white-space: normal;
   }
 
   .hero-support {
+    max-width: 34ch;
+    margin-top: 18px;
     font-size: 1rem;
+    line-height: 1.45;
     white-space: normal;
+  }
+
+  .hero-actions {
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .hero-actions a,
+  .resource-links a,
+  .project-links a {
+    padding: 10px 13px;
+  }
+
+  .section-heading {
+    margin-bottom: 26px;
+  }
+
+  .section-heading p:last-child {
+    margin-top: 12px;
+    font-size: 0.98rem;
+    line-height: 1.48;
   }
 
   .manifesto-copy {
     border-left: 0;
     border-top: 1px solid var(--line-strong);
-    padding: 24px 0 0;
+    padding: 20px 0 0;
   }
 
   .manifesto-copy p {
-    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-size: 1.08rem;
+    line-height: 1.38;
   }
 
   .worlds-list {
-    gap: 62px;
+    gap: 48px;
+  }
+
+  .world-feature {
+    gap: 20px;
+    padding-top: 28px;
+  }
+
+  .world-feature__image img,
+  .image-stage__image {
+    aspect-ratio: 4 / 3;
+  }
+
+  .world-feature__copy p:not(.eyebrow):not(.feature-note) {
+    margin-top: 12px;
+    font-size: 0.98rem;
+  }
+
+  .feature-note {
+    margin-top: 16px;
+  }
+
+  .text-link {
+    margin-top: 18px;
+  }
+
+  .quote-band {
+    width: min(100% - 28px, var(--max-width));
+    padding: 36px 0;
   }
 
   .editorial-quote span {
-    font-size: 2.1rem;
+    font-size: clamp(1.42rem, 7vw, 1.85rem);
+    line-height: 1.2;
   }
 
   .closing-line,
   .book-quote p {
-    font-size: 1.75rem;
+    font-size: clamp(1.42rem, 7vw, 1.75rem);
+    line-height: 1.2;
+  }
+
+  .page-hero {
+    gap: 24px;
+  }
+
+  .page-hero > div:first-child > p:not(.eyebrow),
+  .film-hero__copy p:not(.eyebrow) {
+    font-size: 1rem;
+    line-height: 1.48;
+  }
+
+  .page-hero .prose-column p,
+  .page-hero > div:not(:first-child) > p,
+  .collection-intro p {
+    font-size: 0.98rem;
+    line-height: 1.56;
+  }
+
+  .featured-text-band {
+    padding-top: 48px;
   }
 
   .collection-row,
@@ -1375,15 +1501,33 @@ h3 {
 
   .collection-nav {
     display: grid;
+    width: min(100% - 28px, var(--max-width));
+    padding: 20px 0 58px;
+  }
+
+  .collection-row {
+    gap: 12px;
+    padding: 22px 0;
+  }
+
+  .collection-row h3,
+  .technical-project h3 {
+    font-size: 1.95rem;
   }
 
   .gallery-grid {
     column-count: 1;
   }
 
+  .gallery-item {
+    margin-bottom: 18px;
+  }
+
   .lightbox {
     grid-template-columns: 1fr;
     align-content: center;
+    gap: 12px;
+    padding: 18px;
   }
 
   .lightbox__nav {
@@ -1405,6 +1549,231 @@ h3 {
     gap: 8px;
     width: 100%;
     margin-left: 0;
+    padding-bottom: 18px;
+  }
+
+  .recognition-list li,
+  .practice-list li,
+  .principle-item,
+  .book-part,
+  .video-project-card,
+  .contact-note {
+    padding: 18px;
+  }
+
+  .recognition-list li {
+    border-bottom: 1px solid var(--line);
+    padding: 13px 0;
+  }
+
+  .video-project-grid {
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .video-project-card h3 {
+    margin-top: 12px;
+    font-size: 1.65rem;
+  }
+
+  .film-hero {
+    min-height: 72svh;
+  }
+
+  .film-hero::after {
+    background:
+      linear-gradient(90deg, rgba(13, 12, 10, 0.94), rgba(13, 12, 10, 0.52)),
+      linear-gradient(180deg, transparent 12%, rgba(13, 12, 10, 0.9));
+  }
+
+  .film-hero__copy {
+    width: min(100% - 28px, var(--max-width));
+    padding: 34vh 0 46px;
+  }
+
+  .film-links {
+    margin-top: 22px;
+  }
+
+  .film-links span {
+    font-size: 1.12rem;
+  }
+
+  .credits-list div {
+    padding: 14px;
+  }
+
+  .review-copy .editorial-quote {
+    margin-bottom: 22px;
+  }
+
+  .review-copy .editorial-quote span {
+    font-size: 1.35rem;
+  }
+
+  .book-parts,
+  .principle-grid {
+    gap: 12px;
+  }
+
+  .book-excerpt {
+    gap: 16px;
+    padding: 30px 0;
+  }
+
+  .book-quote {
+    gap: 10px;
+    padding-left: 18px;
+  }
+
+  .book-quote::before {
+    top: -12px;
+    left: 18px;
+    font-size: 3.6rem;
+  }
+
+  .book-part h3,
+  .principle-item h3,
+  .identity-thread h3 {
+    font-size: 1.35rem;
+  }
+
+  .resource-links,
+  .project-links {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .contact-links {
+    gap: 12px;
+  }
+
+  .contact-links li {
+    padding-bottom: 12px;
+  }
+
+  .contact-links a {
+    font-size: 1.22rem;
+  }
+
+  .site-footer {
+    width: min(100% - 28px, var(--max-width));
+    padding: 32px 0 44px;
+  }
+
+  .site-footer__main {
+    gap: 12px;
+  }
+
+  .footer-name {
+    font-size: 1.38rem;
+  }
+
+  .site-footer__links {
+    gap: 10px 14px;
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-header__inner,
+  .mobile-nav,
+  .content-band,
+  .home-hero__content,
+  .film-hero__copy,
+  .quote-band,
+  .collection-nav,
+  .site-footer {
+    width: min(100% - 24px, var(--max-width));
+  }
+
+  .content-band {
+    padding: 46px 0;
+  }
+
+  .home-hero {
+    min-height: 72svh;
+  }
+
+  .home-hero__content {
+    padding-bottom: 34px;
+  }
+
+  h1,
+  .page-hero h1 {
+    font-size: clamp(2.18rem, 11.5vw, 2.65rem);
+  }
+
+  h2 {
+    font-size: 1.72rem;
+  }
+
+  h3 {
+    font-size: 1.34rem;
+  }
+
+  .role-stack {
+    font-size: 1.26rem;
+  }
+
+  .hero-support {
+    max-width: 31ch;
+    font-size: 0.96rem;
+  }
+
+  .hero-actions a,
+  .resource-links a,
+  .project-links a {
+    padding: 9px 11px;
+  }
+
+  .eyebrow {
+    margin-bottom: 10px;
+    font-size: 0.72rem;
+  }
+
+  .section-heading {
+    margin-bottom: 22px;
+  }
+
+  .manifesto-copy p {
+    font-size: 1rem;
+  }
+
+  .worlds-list {
+    gap: 40px;
+  }
+
+  .collection-row h3,
+  .technical-project h3 {
+    font-size: 1.7rem;
+  }
+
+  .editorial-quote span,
+  .closing-line {
+    font-size: 1.38rem;
+  }
+
+  .book-quote p {
+    font-size: 1.26rem;
+  }
+
+  .video-project-card h3 {
+    font-size: 1.45rem;
+  }
+
+  .film-hero {
+    min-height: 68svh;
+  }
+
+  .film-hero__copy {
+    padding: 30vh 0 38px;
+  }
+
+  .footer-role,
+  .footer-principle,
+  .footer-closing {
+    font-size: 0.92rem;
   }
 }
 
