@@ -137,6 +137,10 @@ test("keeps content editable and starter-only pieces removed", async () => {
   assert.doesNotMatch(readme, /ContactForm\.tsx|placeholder links/i);
   assert.equal(cname.trim(), "aleksandartomovski.com");
   assert.match(exportedHome, /https:\/\/aleksandartomovski\.com\/og\.png/);
+  assert.match(exportedHome, /href="\/favicon\.ico"/);
+  assert.match(exportedHome, /href="\/favicon\.svg"/);
+  assert.match(exportedHome, /href="\/site\.webmanifest"/);
+  assert.match(exportedHome, /href="\/apple-touch-icon\.png"/);
   assert.match(exportedHome, /href="\/photography\/"/);
   assert.doesNotMatch(exportedHome, /\/personal\/|\/personal_/);
   assert.match(sitemapXml, /<loc>https:\/\/aleksandartomovski\.com\/<\/loc>/);
@@ -154,6 +158,14 @@ test("keeps content editable and starter-only pieces removed", async () => {
     access(new URL("../public/images/book/one-honest-conversation.png", import.meta.url)),
     access(new URL("../public/images/engineering/systems-architecture.png", import.meta.url)),
     access(new URL("../public/og.png", import.meta.url)),
+    access(new URL("../public/favicon.ico", import.meta.url)),
+    access(new URL("../public/favicon.svg", import.meta.url)),
+    access(new URL("../public/favicon-16x16.png", import.meta.url)),
+    access(new URL("../public/favicon-32x32.png", import.meta.url)),
+    access(new URL("../public/apple-touch-icon.png", import.meta.url)),
+    access(new URL("../public/icon-192x192.png", import.meta.url)),
+    access(new URL("../public/icon-512x512.png", import.meta.url)),
+    access(new URL("../public/site.webmanifest", import.meta.url)),
   ]);
 
   await assert.rejects(

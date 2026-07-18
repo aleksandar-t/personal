@@ -40,9 +40,18 @@ export const metadata: Metadata = {
     description: siteIdentity.statement,
     images: [ogImage],
   },
+  manifest: assetPath("/site.webmanifest"),
   icons: {
-    icon: assetPath("/favicon.svg"),
-    shortcut: assetPath("/favicon.svg"),
+    icon: [
+      { url: assetPath("/favicon.ico"), sizes: "any" },
+      { url: assetPath("/favicon.svg"), type: "image/svg+xml" },
+      { url: assetPath("/favicon-32x32.png"), sizes: "32x32", type: "image/png" },
+      { url: assetPath("/favicon-16x16.png"), sizes: "16x16", type: "image/png" },
+    ],
+    shortcut: assetPath("/favicon.ico"),
+    apple: [
+      { url: assetPath("/apple-touch-icon.png"), sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
