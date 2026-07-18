@@ -95,6 +95,8 @@ test("keeps content editable and starter-only pieces removed", async () => {
     readme,
     cname,
     exportedHome,
+    sitemapXml,
+    robotsTxt,
   ] = await Promise.all([
       readFile(new URL("../content/site.ts", import.meta.url), "utf8"),
       readFile(new URL("../content/photography.ts", import.meta.url), "utf8"),
@@ -105,6 +107,8 @@ test("keeps content editable and starter-only pieces removed", async () => {
       readFile(new URL("../README.md", import.meta.url), "utf8"),
       readFile(new URL("../docs/CNAME", import.meta.url), "utf8"),
       readFile(new URL("../docs/index.html", import.meta.url), "utf8"),
+      readFile(new URL("../docs/sitemap.xml", import.meta.url), "utf8"),
+      readFile(new URL("../docs/robots.txt", import.meta.url), "utf8"),
     ]);
 
   assert.match(site, /One way of seeing/);
@@ -135,6 +139,13 @@ test("keeps content editable and starter-only pieces removed", async () => {
   assert.match(exportedHome, /https:\/\/aleksandartomovski\.com\/og\.png/);
   assert.match(exportedHome, /href="\/photography\/"/);
   assert.doesNotMatch(exportedHome, /\/personal\/|\/personal_/);
+  assert.match(sitemapXml, /<loc>https:\/\/aleksandartomovski\.com\/<\/loc>/);
+  assert.match(
+    sitemapXml,
+    /<loc>https:\/\/aleksandartomovski\.com\/photography\/behind-the-curtains\/<\/loc>/,
+  );
+  assert.match(robotsTxt, /Allow: \//);
+  assert.match(robotsTxt, /Sitemap: https:\/\/aleksandartomovski\.com\/sitemap\.xml/);
 
   await Promise.all([
     access(new URL("../public/images/profile/aleksandar-hero.png", import.meta.url)),

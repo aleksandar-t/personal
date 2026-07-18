@@ -79,6 +79,18 @@ should mostly stay focused on layout and interaction.
 `NEXT_PUBLIC_SITE_URL` to the final public URL before a public launch so social
 platforms receive an absolute image URL.
 
+## SEO
+
+The site generates:
+
+- `/sitemap.xml`
+- `/robots.txt`
+
+Both use `NEXT_PUBLIC_SITE_URL`, which defaults to
+`https://aleksandartomovski.com` for the GitHub Pages export. Submit
+`https://aleksandartomovski.com/sitemap.xml` in Google Search Console after DNS
+propagates.
+
 ## Replace Images
 
 Current images are visual stand-ins for the final personal photography, film
