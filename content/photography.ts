@@ -5,7 +5,7 @@ export const photographyIntro = {
   title: "Photography",
   subtitle: "From mountain light to theatre silence: attention before spectacle.",
   description:
-    "Aleksandar's photography began in mountain light and city streets, then moved toward ballet, theatre, costume, body, shadow, and the charged quiet before performance.",
+    "Aleksandar's photography began in mountain light and city streets, then moved toward ballet, theatre, costume, body, shadow, and the charged quiet before performance. His distinctions include Excellence FIAP (EFIAP) and Master IAAP (MIAAP).",
   links: [
     {
       label: "Instagram portfolio",

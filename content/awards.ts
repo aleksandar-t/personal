@@ -1,5 +1,6 @@
 export const photographyRecognition = [
   "Master IAAP / MIAAP, International Association of Art Photographers (2026)",
+  "Excellence FIAP / EFIAP, International Federation of Photographic Art",
   "Artist FIAP / AFIAP, International Federation of Photographic Art (2025)",
   "Supreme IAAP / SIAAP, International Association of Art Photographers",
   "Master of Photography, National Photo Union of Macedonia (2023)",
